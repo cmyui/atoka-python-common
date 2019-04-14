@@ -154,6 +154,8 @@ def readableMods(__mods):
 		r += "FL"
 	if __mods & mods.SPUNOUT > 0:
 		r += "SO"
+	if __mods & mods.RELAX > 0:
+		r += "RX"
 
 	return r
 
@@ -179,3 +181,37 @@ def getTotalSize(o):
 	except:
 		log.error("Error while getting total object size!")
 		return 0
+
+def calculateFlags(flags, used_mods, gameMode):
+	flagsOutput = ""
+
+	relax = used_mods & 128
+	flashlight = used_mods & 1024
+
+	if flags == 0:
+		return "Not sure how you ended up here.."
+	if flags & 2:
+		flagsOutput += "SpeedHackDetected (2);"
+	""" Unused because peppy can codeTM
+	if flags & 4:
+		flagsOutput += " IncorrectModValue (4);"
+	"""
+	if flags & 8:
+		flagsOutput += " MultipleOsuClients (8);"
+	if flags & 16:
+		flagsOutput += " ChecksumFailure (16);"
+	if flags & 32 and flashlight:
+		flagsOutput += " FlashlightChecksumIncorrect (32);"
+	if flags & 256 and flashlight:
+		flagsOutput += " FlashLightImageHack (256);"
+	if flags & 512 and gameMode == 0:
+		flagsOutput += " SpinnerHack (512);"
+	if flags & 1024:
+		flagsOutput += " TransparentWindow (1024);"
+	if flags & 2048 and gameMode != 3:
+		flagsOutput += " FastPress (2048);"
+	if flags & 4096:
+		flagsOutput += " RawMouseDiscrepancy (4096);"
+	if flags & 8192:
+		flagsOutput += " RawKeyboardDiscrepancy (8192);"
+	return flagsOutput

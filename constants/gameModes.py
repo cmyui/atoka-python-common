@@ -30,9 +30,9 @@ def getGamemodeFull(gameMode):
 	if gameMode == STD:
 		return "osu!"
 	elif gameMode == TAIKO:
-		return "Taiko"
+		return "osu!taiko"
 	elif gameMode == CTB:
-		return "Catch The Beat"
+		return "osu!catch"
 	else:
 		return "osu!mania"
 
@@ -46,8 +46,8 @@ def getGameModeForPrinting(gameMode):
 	if gameMode == STD:
 		return "osu!"
 	elif gameMode == TAIKO:
-		return "Taiko"
+		return "osu!taiko"
 	elif gameMode == CTB:
-		return "CatchTheBeat"
+		return "osu!catch"
 	else:
 		return "osu!mania"

@@ -49,7 +49,9 @@ class listener(threading.Thread):
 
 			# Make sure the handler exists
 			if item["channel"] in self.handlers:
-				log.info("Redis pubsub: {} <- {} ".format(item["channel"], item["data"]))
+				if 'cached_stats' not in item["channel"]:
+					log.info("Redis pubsub: {} <- {} ".format(item["channel"], item["data"]))
+				
 				if isinstance(self.handlers[item["channel"]], generalPubSubHandler.generalPubSubHandler):
 					# Handler class
 					self.handlers[item["channel"]].handle(item["data"])

@@ -530,8 +530,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__common__db__dbConnector
-#define __PYX_HAVE_API__common__db__dbConnector
+#define __PYX_HAVE__lets__common__db__dbConnector
+#define __PYX_HAVE_API__lets__common__db__dbConnector
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
@@ -1109,12 +1109,12 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'common.db.dbConnector' */
-#define __Pyx_MODULE_NAME "common.db.dbConnector"
-extern int __pyx_module_is_main_common__db__dbConnector;
-int __pyx_module_is_main_common__db__dbConnector = 0;
+/* Module declarations from 'lets.common.db.dbConnector' */
+#define __Pyx_MODULE_NAME "lets.common.db.dbConnector"
+extern int __pyx_module_is_main_lets__common__db__dbConnector;
+int __pyx_module_is_main_lets__common__db__dbConnector = 0;
 
-/* Implementation of 'common.db.dbConnector' */
+/* Implementation of 'lets.common.db.dbConnector' */
 static PyObject *__pyx_builtin_range;
 static const char __pyx_k_c[] = "c";
 static const char __pyx_k_db[] = "db";
@@ -1209,13 +1209,13 @@ static const char __pyx_k_mysql_pool_queries[] = ".mysql_pool.queries";
 static const char __pyx_k_A_MySQL_workers_pool[] = "\n\tA MySQL workers pool\n\t";
 static const char __pyx_k_consecutiveEmptyPool[] = "consecutiveEmptyPool";
 static const char __pyx_k_A_single_MySQL_worker[] = "\n\tA single MySQL worker\n\t";
-static const char __pyx_k_common_db_dbConnector[] = "common.db.dbConnector";
 static const char __pyx_k_connectionsPool___init[] = "connectionsPool.__init__";
 static const char __pyx_k_connectionsPool_fillPool[] = "connectionsPool.fillPool";
 static const char __pyx_k_common_db_dbConnector_pyx[] = "common/db/dbConnector.pyx";
 static const char __pyx_k_connectionsPool_getWorker[] = "connectionsPool.getWorker";
 static const char __pyx_k_connectionsPool_newWorker[] = "connectionsPool.newWorker";
 static const char __pyx_k_connectionsPool_putWorker[] = "connectionsPool.putWorker";
+static const char __pyx_k_lets_common_db_dbConnector[] = "lets.common.db.dbConnector";
 static const char __pyx_k_mysql_pool_failed_connections[] = ".mysql_pool.failed_connections";
 static const char __pyx_k_Created_MySQL_worker_Temporary[] = "Created MySQL worker. Temporary: {}";
 static const char __pyx_k_A_MySQL_helper_with_multiple_wo[] = "\n\tA MySQL helper with multiple workers\n\t";
@@ -1246,7 +1246,6 @@ static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_s_charset;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_close;
-static PyObject *__pyx_n_s_common_db_dbConnector;
 static PyObject *__pyx_kp_s_common_db_dbConnector_pyx;
 static PyObject *__pyx_n_s_common_log;
 static PyObject *__pyx_n_s_config;
@@ -1291,6 +1290,7 @@ static PyObject *__pyx_n_s_increment;
 static PyObject *__pyx_n_s_init;
 static PyObject *__pyx_n_s_initialSize;
 static PyObject *__pyx_n_s_lastrowid;
+static PyObject *__pyx_n_s_lets_common_db_dbConnector;
 static PyObject *__pyx_n_s_level;
 static PyObject *__pyx_n_s_log;
 static PyObject *__pyx_n_s_logUtils;
@@ -1330,18 +1330,18 @@ static PyObject *__pyx_n_s_worker;
 static PyObject *__pyx_n_s_worker___del;
 static PyObject *__pyx_n_s_worker___init;
 static PyObject *__pyx_n_s_worker_ping;
-static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_connection, PyObject *__pyx_v_temporary); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_size); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_temporary); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_newConnections); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_level); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_worker); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_initialSize); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params, PyObject *__pyx_v__all); /* proto */
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_6fetchAll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_connection, PyObject *__pyx_v_temporary); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_size); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_2newWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_temporary); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_4fillPool(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_newConnections); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_6getWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_level); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_8putWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_worker); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_initialSize); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params, PyObject *__pyx_v__all); /* proto */
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db_6fetchAll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params); /* proto */
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_10;
@@ -1387,7 +1387,7 @@ static PyObject *__pyx_codeobj__33;
 static PyObject *__pyx_codeobj__36;
 static PyObject *__pyx_codeobj__39;
 
-/* "common/db/dbConnector.pyx":12
+/* "lets/common/db/dbConnector.pyx":12
  * 	A single MySQL worker
  * 	"""
  * 	def __init__(self, connection, temporary=False):             # <<<<<<<<<<<<<<
@@ -1396,10 +1396,10 @@ static PyObject *__pyx_codeobj__39;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_6worker___init__[] = "\n\t\tInitialize a MySQL worker\n\n\t\t:param connection: database connection object\n\t\t:param temporary: if True, this worker will be flagged as temporary\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_6worker_1__init__ = {"__init__", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_6worker_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_6worker___init__};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_6worker_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_6worker___init__[] = "\n\t\tInitialize a MySQL worker\n\n\t\t:param connection: database connection object\n\t\t:param temporary: if True, this worker will be flagged as temporary\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_6worker_1__init__ = {"__init__", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_6worker_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_6worker___init__};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_6worker_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_connection = 0;
   PyObject *__pyx_v_temporary = 0;
@@ -1462,18 +1462,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_1__init__(PyObject *
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 12, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.worker.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.worker.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_6worker___init__(__pyx_self, __pyx_v_self, __pyx_v_connection, __pyx_v_temporary);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_6worker___init__(__pyx_self, __pyx_v_self, __pyx_v_connection, __pyx_v_temporary);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_connection, PyObject *__pyx_v_temporary) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_connection, PyObject *__pyx_v_temporary) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1485,7 +1485,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "common/db/dbConnector.pyx":19
+  /* "lets/common/db/dbConnector.pyx":19
  * 		:param temporary: if True, this worker will be flagged as temporary
  * 		"""
  * 		self.connection = connection             # <<<<<<<<<<<<<<
@@ -1494,7 +1494,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_connection, __pyx_v_connection) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":20
+  /* "lets/common/db/dbConnector.pyx":20
  * 		"""
  * 		self.connection = connection
  * 		self.temporary = temporary             # <<<<<<<<<<<<<<
@@ -1503,7 +1503,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_temporary, __pyx_v_temporary) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":21
+  /* "lets/common/db/dbConnector.pyx":21
  * 		self.connection = connection
  * 		self.temporary = temporary
  * 		log.debug("Created MySQL worker. Temporary: {}".format(self.temporary))             # <<<<<<<<<<<<<<
@@ -1613,7 +1613,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":12
+  /* "lets/common/db/dbConnector.pyx":12
  * 	A single MySQL worker
  * 	"""
  * 	def __init__(self, connection, temporary=False):             # <<<<<<<<<<<<<<
@@ -1632,7 +1632,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("common.db.dbConnector.worker.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.worker.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1640,7 +1640,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":23
+/* "lets/common/db/dbConnector.pyx":23
  * 		log.debug("Created MySQL worker. Temporary: {}".format(self.temporary))
  * 
  * 	def ping(self):             # <<<<<<<<<<<<<<
@@ -1649,21 +1649,21 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker___init__(CYTHON_UNUS
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_3ping(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_6worker_2ping[] = "\n\t\tPing MySQL server using this worker.\n\n\t\t:return: True if connected, False if error occured.\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_6worker_3ping = {"ping", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_6worker_3ping, METH_O, __pyx_doc_6common_2db_11dbConnector_6worker_2ping};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_3ping(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_6worker_3ping(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_6worker_2ping[] = "\n\t\tPing MySQL server using this worker.\n\n\t\t:return: True if connected, False if error occured.\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_6worker_3ping = {"ping", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_6worker_3ping, METH_O, __pyx_doc_4lets_6common_2db_11dbConnector_6worker_2ping};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_6worker_3ping(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("ping (wrapper)", 0);
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_6worker_2ping(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_6worker_2ping(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_v_c = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -1683,7 +1683,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
   PyObject *__pyx_t_14 = NULL;
   __Pyx_RefNannySetupContext("ping", 0);
 
-  /* "common/db/dbConnector.pyx":29
+  /* "lets/common/db/dbConnector.pyx":29
  * 		:return: True if connected, False if error occured.
  * 		"""
  * 		c = self.connection.cursor(MySQLdb.cursors.DictCursor)             # <<<<<<<<<<<<<<
@@ -1752,7 +1752,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
   __pyx_v_c = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":30
+  /* "lets/common/db/dbConnector.pyx":30
  * 		"""
  * 		c = self.connection.cursor(MySQLdb.cursors.DictCursor)
  * 		try:             # <<<<<<<<<<<<<<
@@ -1769,7 +1769,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
       __Pyx_XGOTREF(__pyx_t_8);
       /*try:*/ {
 
-        /* "common/db/dbConnector.pyx":31
+        /* "lets/common/db/dbConnector.pyx":31
  * 		c = self.connection.cursor(MySQLdb.cursors.DictCursor)
  * 		try:
  * 			c.execute("SELECT 1+1")             # <<<<<<<<<<<<<<
@@ -1783,7 +1783,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "common/db/dbConnector.pyx":32
+        /* "lets/common/db/dbConnector.pyx":32
  * 		try:
  * 			c.execute("SELECT 1+1")
  * 			return True             # <<<<<<<<<<<<<<
@@ -1795,7 +1795,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
         __pyx_r = Py_True;
         goto __pyx_L10_try_return;
 
-        /* "common/db/dbConnector.pyx":30
+        /* "lets/common/db/dbConnector.pyx":30
  * 		"""
  * 		c = self.connection.cursor(MySQLdb.cursors.DictCursor)
  * 		try:             # <<<<<<<<<<<<<<
@@ -1810,7 +1810,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "common/db/dbConnector.pyx":33
+      /* "lets/common/db/dbConnector.pyx":33
  * 			c.execute("SELECT 1+1")
  * 			return True
  * 		except MySQLdb.Error:             # <<<<<<<<<<<<<<
@@ -1825,13 +1825,13 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
       __pyx_t_9 = __Pyx_PyErr_ExceptionMatches(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (__pyx_t_9) {
-        __Pyx_AddTraceback("common.db.dbConnector.worker.ping", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        __Pyx_AddTraceback("lets.common.db.dbConnector.worker.ping", __pyx_clineno, __pyx_lineno, __pyx_filename);
         if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_5) < 0) __PYX_ERR(0, 33, __pyx_L8_except_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_GOTREF(__pyx_t_5);
 
-        /* "common/db/dbConnector.pyx":34
+        /* "lets/common/db/dbConnector.pyx":34
  * 			return True
  * 		except MySQLdb.Error:
  * 			return False             # <<<<<<<<<<<<<<
@@ -1849,7 +1849,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
       goto __pyx_L8_except_error;
       __pyx_L8_except_error:;
 
-      /* "common/db/dbConnector.pyx":30
+      /* "lets/common/db/dbConnector.pyx":30
  * 		"""
  * 		c = self.connection.cursor(MySQLdb.cursors.DictCursor)
  * 		try:             # <<<<<<<<<<<<<<
@@ -1876,7 +1876,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
     }
   }
 
-  /* "common/db/dbConnector.pyx":36
+  /* "lets/common/db/dbConnector.pyx":36
  * 			return False
  * 		finally:
  * 			c.close()             # <<<<<<<<<<<<<<
@@ -1982,7 +1982,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
     }
   }
 
-  /* "common/db/dbConnector.pyx":23
+  /* "lets/common/db/dbConnector.pyx":23
  * 		log.debug("Created MySQL worker. Temporary: {}".format(self.temporary))
  * 
  * 	def ping(self):             # <<<<<<<<<<<<<<
@@ -1997,7 +1997,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("common.db.dbConnector.worker.ping", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.worker.ping", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_c);
@@ -2006,7 +2006,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":38
+/* "lets/common/db/dbConnector.pyx":38
  * 			c.close()
  * 
  * 	def __del__(self):             # <<<<<<<<<<<<<<
@@ -2015,21 +2015,21 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_2ping(CYTHON_UNUSED 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_5__del__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_6worker_4__del__[] = "\n\t\tClose connection to the server\n\n\t\t:return:\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_6worker_5__del__ = {"__del__", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_6worker_5__del__, METH_O, __pyx_doc_6common_2db_11dbConnector_6worker_4__del__};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_6worker_5__del__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_6worker_5__del__(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_6worker_4__del__[] = "\n\t\tClose connection to the server\n\n\t\t:return:\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_6worker_5__del__ = {"__del__", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_6worker_5__del__, METH_O, __pyx_doc_4lets_6common_2db_11dbConnector_6worker_4__del__};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_6worker_5__del__(PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__del__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_6worker_4__del__(__pyx_self, ((PyObject *)__pyx_v_self));
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_6worker_4__del__(__pyx_self, ((PyObject *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2037,7 +2037,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUS
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("__del__", 0);
 
-  /* "common/db/dbConnector.pyx":44
+  /* "lets/common/db/dbConnector.pyx":44
  * 		:return:
  * 		"""
  * 		self.connection.close()             # <<<<<<<<<<<<<<
@@ -2069,7 +2069,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":38
+  /* "lets/common/db/dbConnector.pyx":38
  * 			c.close()
  * 
  * 	def __del__(self):             # <<<<<<<<<<<<<<
@@ -2084,7 +2084,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUS
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("common.db.dbConnector.worker.__del__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.worker.__del__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2092,7 +2092,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUS
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":50
+/* "lets/common/db/dbConnector.pyx":50
  * 	A MySQL workers pool
  * 	"""
  * 	def __init__(self, host, username, password, database, size=128):             # <<<<<<<<<<<<<<
@@ -2101,10 +2101,10 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_6worker_4__del__(CYTHON_UNUS
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_15connectionsPool___init__[] = "\n\t\tInitialize a MySQL connections pool\n\n\t\t:param host: MySQL host\n\t\t:param username: MySQL username\n\t\t:param password: MySQL password\n\t\t:param database: MySQL database name\n\t\t:param size: pool max size\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_15connectionsPool_1__init__ = {"__init__", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_15connectionsPool_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_15connectionsPool___init__};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool___init__[] = "\n\t\tInitialize a MySQL connections pool\n\n\t\t:param host: MySQL host\n\t\t:param username: MySQL username\n\t\t:param password: MySQL password\n\t\t:param database: MySQL database name\n\t\t:param size: pool max size\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_1__init__ = {"__init__", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool___init__};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_host = 0;
   PyObject *__pyx_v_username = 0;
@@ -2200,18 +2200,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_1__init__(
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 50, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(__pyx_self, __pyx_v_self, __pyx_v_host, __pyx_v_username, __pyx_v_password, __pyx_v_database, __pyx_v_size);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool___init__(__pyx_self, __pyx_v_self, __pyx_v_host, __pyx_v_username, __pyx_v_password, __pyx_v_database, __pyx_v_size);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_size) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_size) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2221,7 +2221,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "common/db/dbConnector.pyx":60
+  /* "lets/common/db/dbConnector.pyx":60
  * 		:param size: pool max size
  * 		"""
  * 		self.config = (host, username, password, database)             # <<<<<<<<<<<<<<
@@ -2245,7 +2245,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_config, __pyx_t_1) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":61
+  /* "lets/common/db/dbConnector.pyx":61
  * 		"""
  * 		self.config = (host, username, password, database)
  * 		self.maxSize = size             # <<<<<<<<<<<<<<
@@ -2254,7 +2254,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_maxSize, __pyx_v_size) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":62
+  /* "lets/common/db/dbConnector.pyx":62
  * 		self.config = (host, username, password, database)
  * 		self.maxSize = size
  * 		self.pool = queue.Queue(self.maxSize)             # <<<<<<<<<<<<<<
@@ -2317,7 +2317,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pool, __pyx_t_1) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":63
+  /* "lets/common/db/dbConnector.pyx":63
  * 		self.maxSize = size
  * 		self.pool = queue.Queue(self.maxSize)
  * 		self.consecutiveEmptyPool = 0             # <<<<<<<<<<<<<<
@@ -2326,7 +2326,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_consecutiveEmptyPool, __pyx_int_0) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":64
+  /* "lets/common/db/dbConnector.pyx":64
  * 		self.pool = queue.Queue(self.maxSize)
  * 		self.consecutiveEmptyPool = 0
  * 		self.fillPool()             # <<<<<<<<<<<<<<
@@ -2355,7 +2355,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":50
+  /* "lets/common/db/dbConnector.pyx":50
  * 	A MySQL workers pool
  * 	"""
  * 	def __init__(self, host, username, password, database, size=128):             # <<<<<<<<<<<<<<
@@ -2372,7 +2372,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2380,7 +2380,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":66
+/* "lets/common/db/dbConnector.pyx":66
  * 		self.fillPool()
  * 
  * 	def newWorker(self, temporary=False):             # <<<<<<<<<<<<<<
@@ -2389,10 +2389,10 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool___init__(C
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_3newWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_15connectionsPool_2newWorker[] = "\n\t\tCreate a new worker.\n\n\t\t:param temporary: if True, flag the worker as temporary\n\t\t:return: instance of worker class\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_15connectionsPool_3newWorker = {"newWorker", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_15connectionsPool_3newWorker, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_15connectionsPool_2newWorker};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_3newWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_3newWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_2newWorker[] = "\n\t\tCreate a new worker.\n\n\t\t:param temporary: if True, flag the worker as temporary\n\t\t:return: instance of worker class\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_3newWorker = {"newWorker", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_3newWorker, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_2newWorker};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_3newWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_temporary = 0;
   PyObject *__pyx_r = 0;
@@ -2444,18 +2444,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_3newWorker
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("newWorker", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 66, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.newWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.newWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker(__pyx_self, __pyx_v_self, __pyx_v_temporary);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_2newWorker(__pyx_self, __pyx_v_self, __pyx_v_temporary);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_temporary) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_2newWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_temporary) {
   PyObject *__pyx_v_db = NULL;
   PyObject *__pyx_v_conn = NULL;
   PyObject *__pyx_r = NULL;
@@ -2467,7 +2467,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("newWorker", 0);
 
-  /* "common/db/dbConnector.pyx":73
+  /* "lets/common/db/dbConnector.pyx":73
  * 		:return: instance of worker class
  * 		"""
  * 		db = MySQLdb.connect(             # <<<<<<<<<<<<<<
@@ -2480,7 +2480,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":74
+  /* "lets/common/db/dbConnector.pyx":74
  * 		"""
  * 		db = MySQLdb.connect(
  * 			*self.config,             # <<<<<<<<<<<<<<
@@ -2490,7 +2490,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_config); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "common/db/dbConnector.pyx":73
+  /* "lets/common/db/dbConnector.pyx":73
  * 		:return: instance of worker class
  * 		"""
  * 		db = MySQLdb.connect(             # <<<<<<<<<<<<<<
@@ -2501,7 +2501,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":75
+  /* "lets/common/db/dbConnector.pyx":75
  * 		db = MySQLdb.connect(
  * 			*self.config,
  * 			autocommit=True,             # <<<<<<<<<<<<<<
@@ -2513,7 +2513,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_autocommit, Py_True) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_charset, __pyx_n_s_utf8) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":77
+  /* "lets/common/db/dbConnector.pyx":77
  * 			autocommit=True,
  * 			charset="utf8",
  * 			use_unicode=True             # <<<<<<<<<<<<<<
@@ -2522,7 +2522,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
  */
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_use_unicode, Py_True) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":73
+  /* "lets/common/db/dbConnector.pyx":73
  * 		:return: instance of worker class
  * 		"""
  * 		db = MySQLdb.connect(             # <<<<<<<<<<<<<<
@@ -2537,7 +2537,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __pyx_v_db = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "common/db/dbConnector.pyx":79
+  /* "lets/common/db/dbConnector.pyx":79
  * 			use_unicode=True
  * 		)
  * 		conn = worker(db, temporary)             # <<<<<<<<<<<<<<
@@ -2594,7 +2594,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __pyx_v_conn = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "common/db/dbConnector.pyx":80
+  /* "lets/common/db/dbConnector.pyx":80
  * 		)
  * 		conn = worker(db, temporary)
  * 		return conn             # <<<<<<<<<<<<<<
@@ -2606,7 +2606,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __pyx_r = __pyx_v_conn;
   goto __pyx_L0;
 
-  /* "common/db/dbConnector.pyx":66
+  /* "lets/common/db/dbConnector.pyx":66
  * 		self.fillPool()
  * 
  * 	def newWorker(self, temporary=False):             # <<<<<<<<<<<<<<
@@ -2620,7 +2620,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.newWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.newWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_db);
@@ -2630,7 +2630,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":82
+/* "lets/common/db/dbConnector.pyx":82
  * 		return conn
  * 
  * 	def fillPool(self, newConnections=0):             # <<<<<<<<<<<<<<
@@ -2639,10 +2639,10 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_2newWorker
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_5fillPool(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_15connectionsPool_4fillPool[] = "\n\t\tFill the queue with workers\n\n\t\t:param newConnections:\tnumber of new connections. If 0, the pool will be filled entirely.\n\t\t:return:\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_15connectionsPool_5fillPool = {"fillPool", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_15connectionsPool_5fillPool, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_15connectionsPool_4fillPool};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_5fillPool(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_5fillPool(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_4fillPool[] = "\n\t\tFill the queue with workers\n\n\t\t:param newConnections:\tnumber of new connections. If 0, the pool will be filled entirely.\n\t\t:return:\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_5fillPool = {"fillPool", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_5fillPool, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_4fillPool};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_5fillPool(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_newConnections = 0;
   PyObject *__pyx_r = 0;
@@ -2694,18 +2694,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_5fillPool(
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("fillPool", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 82, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.fillPool", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.fillPool", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(__pyx_self, __pyx_v_self, __pyx_v_newConnections);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_4fillPool(__pyx_self, __pyx_v_self, __pyx_v_newConnections);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_newConnections) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_4fillPool(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_newConnections) {
   CYTHON_UNUSED PyObject *__pyx_v__ = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -2722,7 +2722,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
   __Pyx_RefNannySetupContext("fillPool", 0);
   __Pyx_INCREF(__pyx_v_newConnections);
 
-  /* "common/db/dbConnector.pyx":90
+  /* "lets/common/db/dbConnector.pyx":90
  * 		"""
  * 		# If newConnections = 0, fill the whole pool
  * 		if newConnections == 0:             # <<<<<<<<<<<<<<
@@ -2735,7 +2735,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "common/db/dbConnector.pyx":91
+    /* "lets/common/db/dbConnector.pyx":91
  * 		# If newConnections = 0, fill the whole pool
  * 		if newConnections == 0:
  * 			newConnections = self.maxSize             # <<<<<<<<<<<<<<
@@ -2747,7 +2747,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
     __Pyx_DECREF_SET(__pyx_v_newConnections, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "common/db/dbConnector.pyx":90
+    /* "lets/common/db/dbConnector.pyx":90
  * 		"""
  * 		# If newConnections = 0, fill the whole pool
  * 		if newConnections == 0:             # <<<<<<<<<<<<<<
@@ -2756,7 +2756,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
  */
   }
 
-  /* "common/db/dbConnector.pyx":94
+  /* "lets/common/db/dbConnector.pyx":94
  * 
  * 		# Fill the pool
  * 		for _ in range(0, newConnections):             # <<<<<<<<<<<<<<
@@ -2817,7 +2817,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
     __Pyx_XDECREF_SET(__pyx_v__, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "common/db/dbConnector.pyx":95
+    /* "lets/common/db/dbConnector.pyx":95
  * 		# Fill the pool
  * 		for _ in range(0, newConnections):
  * 			if not self.pool.full():             # <<<<<<<<<<<<<<
@@ -2852,7 +2852,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
     __pyx_t_8 = ((!__pyx_t_2) != 0);
     if (__pyx_t_8) {
 
-      /* "common/db/dbConnector.pyx":96
+      /* "lets/common/db/dbConnector.pyx":96
  * 		for _ in range(0, newConnections):
  * 			if not self.pool.full():
  * 				self.pool.put_nowait(self.newWorker())             # <<<<<<<<<<<<<<
@@ -2932,7 +2932,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "common/db/dbConnector.pyx":95
+      /* "lets/common/db/dbConnector.pyx":95
  * 		# Fill the pool
  * 		for _ in range(0, newConnections):
  * 			if not self.pool.full():             # <<<<<<<<<<<<<<
@@ -2941,7 +2941,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
  */
     }
 
-    /* "common/db/dbConnector.pyx":94
+    /* "lets/common/db/dbConnector.pyx":94
  * 
  * 		# Fill the pool
  * 		for _ in range(0, newConnections):             # <<<<<<<<<<<<<<
@@ -2951,7 +2951,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":82
+  /* "lets/common/db/dbConnector.pyx":82
  * 		return conn
  * 
  * 	def fillPool(self, newConnections=0):             # <<<<<<<<<<<<<<
@@ -2969,7 +2969,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.fillPool", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.fillPool", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v__);
@@ -2979,7 +2979,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":98
+/* "lets/common/db/dbConnector.pyx":98
  * 				self.pool.put_nowait(self.newWorker())
  * 
  * 	def getWorker(self, level=0):             # <<<<<<<<<<<<<<
@@ -2988,10 +2988,10 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_4fillPool(
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_7getWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_15connectionsPool_6getWorker[] = "\n\t\tGet a MySQL connection worker from the pool.\n\t\tIf the pool is empty, a new temporary worker is created.\n\n\t\t:param level: number of failed connection attempts. If > 50, return None\n\t\t:return: instance of worker class\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_15connectionsPool_7getWorker = {"getWorker", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_15connectionsPool_7getWorker, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_15connectionsPool_6getWorker};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_7getWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_7getWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_6getWorker[] = "\n\t\tGet a MySQL connection worker from the pool.\n\t\tIf the pool is empty, a new temporary worker is created.\n\n\t\t:param level: number of failed connection attempts. If > 50, return None\n\t\t:return: instance of worker class\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_7getWorker = {"getWorker", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_7getWorker, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_6getWorker};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_7getWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_level = 0;
   PyObject *__pyx_r = 0;
@@ -3043,18 +3043,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_7getWorker
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("getWorker", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 98, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.getWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.getWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker(__pyx_self, __pyx_v_self, __pyx_v_level);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_6getWorker(__pyx_self, __pyx_v_self, __pyx_v_level);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_level) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_6getWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_level) {
   PyObject *__pyx_v_worker = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3073,7 +3073,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   PyObject *__pyx_t_13 = NULL;
   __Pyx_RefNannySetupContext("getWorker", 0);
 
-  /* "common/db/dbConnector.pyx":108
+  /* "lets/common/db/dbConnector.pyx":108
  * 		# Make sure we below 50 retries
  * 		#log.info("Pool size: {}".format(self.pool.qsize()))
  * 		glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.queries")             # <<<<<<<<<<<<<<
@@ -3144,7 +3144,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":109
+  /* "lets/common/db/dbConnector.pyx":109
  * 		#log.info("Pool size: {}".format(self.pool.qsize()))
  * 		glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.queries")
  * 		glob.dog.gauge(glob.DATADOG_PREFIX+".mysql_pool.size", self.pool.qsize())             # <<<<<<<<<<<<<<
@@ -3241,7 +3241,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":110
+  /* "lets/common/db/dbConnector.pyx":110
  * 		glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.queries")
  * 		glob.dog.gauge(glob.DATADOG_PREFIX+".mysql_pool.size", self.pool.qsize())
  * 		if level >= 50:             # <<<<<<<<<<<<<<
@@ -3253,7 +3253,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_8) {
 
-    /* "common/db/dbConnector.pyx":111
+    /* "lets/common/db/dbConnector.pyx":111
  * 		glob.dog.gauge(glob.DATADOG_PREFIX+".mysql_pool.size", self.pool.qsize())
  * 		if level >= 50:
  * 			log.warning("Too many failed connection attempts. No MySQL connection available.")             # <<<<<<<<<<<<<<
@@ -3270,7 +3270,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "common/db/dbConnector.pyx":112
+    /* "lets/common/db/dbConnector.pyx":112
  * 		if level >= 50:
  * 			log.warning("Too many failed connection attempts. No MySQL connection available.")
  * 			return None             # <<<<<<<<<<<<<<
@@ -3282,7 +3282,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     __pyx_r = Py_None;
     goto __pyx_L0;
 
-    /* "common/db/dbConnector.pyx":110
+    /* "lets/common/db/dbConnector.pyx":110
  * 		glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.queries")
  * 		glob.dog.gauge(glob.DATADOG_PREFIX+".mysql_pool.size", self.pool.qsize())
  * 		if level >= 50:             # <<<<<<<<<<<<<<
@@ -3291,7 +3291,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
  */
   }
 
-  /* "common/db/dbConnector.pyx":114
+  /* "lets/common/db/dbConnector.pyx":114
  * 			return None
  * 
  * 		try:             # <<<<<<<<<<<<<<
@@ -3307,7 +3307,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     __Pyx_XGOTREF(__pyx_t_11);
     /*try:*/ {
 
-      /* "common/db/dbConnector.pyx":115
+      /* "lets/common/db/dbConnector.pyx":115
  * 
  * 		try:
  * 			if self.pool.empty():             # <<<<<<<<<<<<<<
@@ -3341,7 +3341,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (__pyx_t_8) {
 
-        /* "common/db/dbConnector.pyx":117
+        /* "lets/common/db/dbConnector.pyx":117
  * 			if self.pool.empty():
  * 				# The pool is empty. Spawn a new temporary worker
  * 				log.warning("MySQL connections pool is empty. Using temporary worker.")             # <<<<<<<<<<<<<<
@@ -3358,7 +3358,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "common/db/dbConnector.pyx":118
+        /* "lets/common/db/dbConnector.pyx":118
  * 				# The pool is empty. Spawn a new temporary worker
  * 				log.warning("MySQL connections pool is empty. Using temporary worker.")
  * 				worker = self.newWorker(True)             # <<<<<<<<<<<<<<
@@ -3373,7 +3373,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
         __pyx_v_worker = __pyx_t_4;
         __pyx_t_4 = 0;
 
-        /* "common/db/dbConnector.pyx":121
+        /* "lets/common/db/dbConnector.pyx":121
  * 
  * 				# Increment saturation
  * 				self.consecutiveEmptyPool += 1             # <<<<<<<<<<<<<<
@@ -3388,7 +3388,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
         if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_consecutiveEmptyPool, __pyx_t_1) < 0) __PYX_ERR(0, 121, __pyx_L4_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "common/db/dbConnector.pyx":124
+        /* "lets/common/db/dbConnector.pyx":124
  * 
  * 				# If the pool is usually empty, expand it
  * 				if self.consecutiveEmptyPool >= 10:             # <<<<<<<<<<<<<<
@@ -3403,7 +3403,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         if (__pyx_t_8) {
 
-          /* "common/db/dbConnector.pyx":125
+          /* "lets/common/db/dbConnector.pyx":125
  * 				# If the pool is usually empty, expand it
  * 				if self.consecutiveEmptyPool >= 10:
  * 					log.warning("MySQL connections pool is empty. Filling connections pool.")             # <<<<<<<<<<<<<<
@@ -3420,7 +3420,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "common/db/dbConnector.pyx":126
+          /* "lets/common/db/dbConnector.pyx":126
  * 				if self.consecutiveEmptyPool >= 10:
  * 					log.warning("MySQL connections pool is empty. Filling connections pool.")
  * 					self.fillPool()             # <<<<<<<<<<<<<<
@@ -3449,7 +3449,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "common/db/dbConnector.pyx":124
+          /* "lets/common/db/dbConnector.pyx":124
  * 
  * 				# If the pool is usually empty, expand it
  * 				if self.consecutiveEmptyPool >= 10:             # <<<<<<<<<<<<<<
@@ -3458,7 +3458,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
  */
         }
 
-        /* "common/db/dbConnector.pyx":115
+        /* "lets/common/db/dbConnector.pyx":115
  * 
  * 		try:
  * 			if self.pool.empty():             # <<<<<<<<<<<<<<
@@ -3468,7 +3468,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
         goto __pyx_L10;
       }
 
-      /* "common/db/dbConnector.pyx":130
+      /* "lets/common/db/dbConnector.pyx":130
  * 				# The pool is not empty. Get worker from the pool
  * 				# and reset saturation counter
  * 				worker = self.pool.get()             # <<<<<<<<<<<<<<
@@ -3502,7 +3502,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
         __pyx_v_worker = __pyx_t_4;
         __pyx_t_4 = 0;
 
-        /* "common/db/dbConnector.pyx":131
+        /* "lets/common/db/dbConnector.pyx":131
  * 				# and reset saturation counter
  * 				worker = self.pool.get()
  * 				self.consecutiveEmptyPool = 0             # <<<<<<<<<<<<<<
@@ -3513,7 +3513,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
       }
       __pyx_L10:;
 
-      /* "common/db/dbConnector.pyx":114
+      /* "lets/common/db/dbConnector.pyx":114
  * 			return None
  * 
  * 		try:             # <<<<<<<<<<<<<<
@@ -3533,7 +3533,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "common/db/dbConnector.pyx":132
+    /* "lets/common/db/dbConnector.pyx":132
  * 				worker = self.pool.get()
  * 				self.consecutiveEmptyPool = 0
  * 		except MySQLdb.OperationalError:             # <<<<<<<<<<<<<<
@@ -3548,13 +3548,13 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     __pyx_t_7 = __Pyx_PyErr_ExceptionMatches(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (__pyx_t_7) {
-      __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.getWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.getWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
       if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_4, &__pyx_t_1) < 0) __PYX_ERR(0, 132, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GOTREF(__pyx_t_1);
 
-      /* "common/db/dbConnector.pyx":135
+      /* "lets/common/db/dbConnector.pyx":135
  * 			# Connection to server lost
  * 			# Wait 1 second and try again
  * 			log.warning("Can't connect to MySQL database. Retrying in 1 second...")             # <<<<<<<<<<<<<<
@@ -3571,7 +3571,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "common/db/dbConnector.pyx":136
+      /* "lets/common/db/dbConnector.pyx":136
  * 			# Wait 1 second and try again
  * 			log.warning("Can't connect to MySQL database. Retrying in 1 second...")
  * 			glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.failed_connections")             # <<<<<<<<<<<<<<
@@ -3642,7 +3642,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "common/db/dbConnector.pyx":137
+      /* "lets/common/db/dbConnector.pyx":137
  * 			log.warning("Can't connect to MySQL database. Retrying in 1 second...")
  * 			glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.failed_connections")
  * 			time.sleep(1)             # <<<<<<<<<<<<<<
@@ -3659,7 +3659,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "common/db/dbConnector.pyx":138
+      /* "lets/common/db/dbConnector.pyx":138
  * 			glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.failed_connections")
  * 			time.sleep(1)
  * 			return self.getWorker(level=level+1)             # <<<<<<<<<<<<<<
@@ -3689,7 +3689,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     goto __pyx_L6_except_error;
     __pyx_L6_except_error:;
 
-    /* "common/db/dbConnector.pyx":114
+    /* "lets/common/db/dbConnector.pyx":114
  * 			return None
  * 
  * 		try:             # <<<<<<<<<<<<<<
@@ -3710,7 +3710,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
     __pyx_L9_try_end:;
   }
 
-  /* "common/db/dbConnector.pyx":141
+  /* "lets/common/db/dbConnector.pyx":141
  * 
  * 		# Return the connection
  * 		return worker             # <<<<<<<<<<<<<<
@@ -3722,7 +3722,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   __pyx_r = __pyx_v_worker;
   goto __pyx_L0;
 
-  /* "common/db/dbConnector.pyx":98
+  /* "lets/common/db/dbConnector.pyx":98
  * 				self.pool.put_nowait(self.newWorker())
  * 
  * 	def getWorker(self, level=0):             # <<<<<<<<<<<<<<
@@ -3740,7 +3740,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_12);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.getWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.getWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_worker);
@@ -3749,7 +3749,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":143
+/* "lets/common/db/dbConnector.pyx":143
  * 		return worker
  * 
  * 	def putWorker(self, worker):             # <<<<<<<<<<<<<<
@@ -3758,10 +3758,10 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_6getWorker
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_9putWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_15connectionsPool_8putWorker[] = "\n\t\tPut the worker back in the pool.\n\t\tIf the worker is temporary, close the connection\n\t\tand destroy the object\n\n\t\t:param worker: worker object\n\t\t:return:\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_15connectionsPool_9putWorker = {"putWorker", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_15connectionsPool_9putWorker, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_15connectionsPool_8putWorker};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_9putWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_9putWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_8putWorker[] = "\n\t\tPut the worker back in the pool.\n\t\tIf the worker is temporary, close the connection\n\t\tand destroy the object\n\n\t\t:param worker: worker object\n\t\t:return:\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_9putWorker = {"putWorker", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_9putWorker, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_15connectionsPool_8putWorker};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_15connectionsPool_9putWorker(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_worker = 0;
   PyObject *__pyx_r = 0;
@@ -3809,18 +3809,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_15connectionsPool_9putWorker
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("putWorker", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 143, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.putWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.putWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker(__pyx_self, __pyx_v_self, __pyx_v_worker);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_8putWorker(__pyx_self, __pyx_v_self, __pyx_v_worker);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_worker) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_15connectionsPool_8putWorker(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_worker) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -3832,7 +3832,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
   __Pyx_RefNannySetupContext("putWorker", 0);
   __Pyx_INCREF(__pyx_v_worker);
 
-  /* "common/db/dbConnector.pyx":152
+  /* "lets/common/db/dbConnector.pyx":152
  * 		:return:
  * 		"""
  * 		if worker.temporary or self.pool.full():             # <<<<<<<<<<<<<<
@@ -3877,7 +3877,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "common/db/dbConnector.pyx":155
+    /* "lets/common/db/dbConnector.pyx":155
  * 			# Kill the worker if it's temporary or the queue
  * 			# is full and we can't  put anything in it
  * 			del worker             # <<<<<<<<<<<<<<
@@ -3887,7 +3887,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
     __Pyx_DECREF(__pyx_v_worker);
     __pyx_v_worker = NULL;
 
-    /* "common/db/dbConnector.pyx":152
+    /* "lets/common/db/dbConnector.pyx":152
  * 		:return:
  * 		"""
  * 		if worker.temporary or self.pool.full():             # <<<<<<<<<<<<<<
@@ -3897,7 +3897,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
     goto __pyx_L3;
   }
 
-  /* "common/db/dbConnector.pyx":158
+  /* "lets/common/db/dbConnector.pyx":158
  * 		else:
  * 			# Put the connection in the queue if there's space
  * 			self.pool.put_nowait(worker)             # <<<<<<<<<<<<<<
@@ -3957,7 +3957,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
   }
   __pyx_L3:;
 
-  /* "common/db/dbConnector.pyx":143
+  /* "lets/common/db/dbConnector.pyx":143
  * 		return worker
  * 
  * 	def putWorker(self, worker):             # <<<<<<<<<<<<<<
@@ -3973,7 +3973,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("common.db.dbConnector.connectionsPool.putWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.connectionsPool.putWorker", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_worker);
@@ -3982,7 +3982,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":164
+/* "lets/common/db/dbConnector.pyx":164
  * 	A MySQL helper with multiple workers
  * 	"""
  * 	def __init__(self, host, username, password, database, initialSize):             # <<<<<<<<<<<<<<
@@ -3991,10 +3991,10 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_15connectionsPool_8putWorker
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_2db___init__[] = "\n\t\tInitialize a new MySQL database helper with multiple workers.\n\t\tThis class is thread safe.\n\n\t\t:param host: MySQL host\n\t\t:param username: MySQL username\n\t\t:param password: MySQL password\n\t\t:param database: MySQL database name\n\t\t:param initialSize: initial pool size\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_2db_1__init__ = {"__init__", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_2db_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_2db___init__};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_2db___init__[] = "\n\t\tInitialize a new MySQL database helper with multiple workers.\n\t\tThis class is thread safe.\n\n\t\t:param host: MySQL host\n\t\t:param username: MySQL username\n\t\t:param password: MySQL password\n\t\t:param database: MySQL database name\n\t\t:param initialSize: initial pool size\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_2db_1__init__ = {"__init__", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_2db_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_2db___init__};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_host = 0;
   PyObject *__pyx_v_username = 0;
@@ -4086,18 +4086,18 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_1__init__(PyObject *__py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 1, 6, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 164, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.db.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_2db___init__(__pyx_self, __pyx_v_self, __pyx_v_host, __pyx_v_username, __pyx_v_password, __pyx_v_database, __pyx_v_initialSize);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_2db___init__(__pyx_self, __pyx_v_self, __pyx_v_host, __pyx_v_username, __pyx_v_password, __pyx_v_database, __pyx_v_initialSize);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_initialSize) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_host, PyObject *__pyx_v_username, PyObject *__pyx_v_password, PyObject *__pyx_v_database, PyObject *__pyx_v_initialSize) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4107,12 +4107,12 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED P
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "common/db/dbConnector.pyx":175
+  /* "lets/common/db/dbConnector.pyx":175
  * 		:param initialSize: initial pool size
  * 		"""
  * 		self.pool = connectionsPool(host, username, password, database, initialSize)             # <<<<<<<<<<<<<<
  * 
- * 	def execute(self, query, params = ()):
+ * 	def execute(self, query, params=None):
  */
   __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_connectionsPool); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4173,7 +4173,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED P
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pool, __pyx_t_1) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":164
+  /* "lets/common/db/dbConnector.pyx":164
  * 	A MySQL helper with multiple workers
  * 	"""
  * 	def __init__(self, host, username, password, database, initialSize):             # <<<<<<<<<<<<<<
@@ -4189,7 +4189,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED P
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("common.db.dbConnector.db.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4197,19 +4197,19 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db___init__(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":177
+/* "lets/common/db/dbConnector.pyx":177
  * 		self.pool = connectionsPool(host, username, password, database, initialSize)
  * 
- * 	def execute(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def execute(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Executes a query
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_3execute(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_2db_2execute[] = "\n\t\tExecutes a query\n\n\t\t:param query: query to execute. You can bind parameters with %s\n\t\t:param params: parameters list. First element replaces first %s and so on\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_2db_3execute = {"execute", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_2db_3execute, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_2db_2execute};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_3execute(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_3execute(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_2db_2execute[] = "\n\t\tExecutes a query\n\n\t\t:param query: query to execute. You can bind parameters with %s\n\t\t:param params: parameters list. First element replaces first %s and so on\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_2db_3execute = {"execute", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_2db_3execute, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_2db_2execute};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_3execute(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_query = 0;
   PyObject *__pyx_v_params = 0;
@@ -4219,7 +4219,7 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_3execute(PyObject *__pyx
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_query,&__pyx_n_s_params,0};
     PyObject* values[3] = {0,0,0};
-    values[2] = ((PyObject *)((PyObject*)__pyx_empty_tuple));
+    values[2] = ((PyObject *)((PyObject *)Py_None));
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -4272,27 +4272,27 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_3execute(PyObject *__pyx
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("execute", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 177, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.db.execute", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.execute", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_2db_2execute(__pyx_self, __pyx_v_self, __pyx_v_query, __pyx_v_params);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_2db_2execute(__pyx_self, __pyx_v_self, __pyx_v_query, __pyx_v_params);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params) {
   PyObject *__pyx_v_cursor = NULL;
   PyObject *__pyx_v_worker = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
+  int __pyx_t_1;
+  int __pyx_t_2;
   PyObject *__pyx_t_3 = NULL;
-  int __pyx_t_4;
-  int __pyx_t_5;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   PyObject *__pyx_t_7 = NULL;
   int __pyx_t_8;
@@ -4305,10 +4305,41 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
   PyObject *__pyx_t_15 = NULL;
   PyObject *__pyx_t_16 = NULL;
   __Pyx_RefNannySetupContext("execute", 0);
+  __Pyx_INCREF(__pyx_v_params);
 
-  /* "common/db/dbConnector.pyx":184
+  /* "lets/common/db/dbConnector.pyx":184
  * 		:param params: parameters list. First element replaces first %s and so on
  * 		"""
+ * 		if params is None:             # <<<<<<<<<<<<<<
+ * 			params = ()
+ * 		cursor = None
+ */
+  __pyx_t_1 = (__pyx_v_params == Py_None);
+  __pyx_t_2 = (__pyx_t_1 != 0);
+  if (__pyx_t_2) {
+
+    /* "lets/common/db/dbConnector.pyx":185
+ * 		"""
+ * 		if params is None:
+ * 			params = ()             # <<<<<<<<<<<<<<
+ * 		cursor = None
+ * 		worker = self.pool.getWorker()
+ */
+    __Pyx_INCREF(__pyx_empty_tuple);
+    __Pyx_DECREF_SET(__pyx_v_params, __pyx_empty_tuple);
+
+    /* "lets/common/db/dbConnector.pyx":184
+ * 		:param params: parameters list. First element replaces first %s and so on
+ * 		"""
+ * 		if params is None:             # <<<<<<<<<<<<<<
+ * 			params = ()
+ * 		cursor = None
+ */
+  }
+
+  /* "lets/common/db/dbConnector.pyx":186
+ * 		if params is None:
+ * 			params = ()
  * 		cursor = None             # <<<<<<<<<<<<<<
  * 		worker = self.pool.getWorker()
  * 		if worker is None:
@@ -4316,51 +4347,51 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
   __Pyx_INCREF(Py_None);
   __pyx_v_cursor = Py_None;
 
-  /* "common/db/dbConnector.pyx":185
- * 		"""
+  /* "lets/common/db/dbConnector.pyx":187
+ * 			params = ()
  * 		cursor = None
  * 		worker = self.pool.getWorker()             # <<<<<<<<<<<<<<
  * 		if worker is None:
  * 			return None
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_getWorker); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 185, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = NULL;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_2)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_getWorker); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_t_4 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_4)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
     }
   }
-  if (__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__pyx_t_4) {
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 187, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 187, __pyx_L1_error)
   }
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_v_worker = __pyx_t_1;
-  __pyx_t_1 = 0;
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_worker = __pyx_t_3;
+  __pyx_t_3 = 0;
 
-  /* "common/db/dbConnector.pyx":186
+  /* "lets/common/db/dbConnector.pyx":188
  * 		cursor = None
  * 		worker = self.pool.getWorker()
  * 		if worker is None:             # <<<<<<<<<<<<<<
  * 			return None
  * 		try:
  */
-  __pyx_t_4 = (__pyx_v_worker == Py_None);
-  __pyx_t_5 = (__pyx_t_4 != 0);
-  if (__pyx_t_5) {
+  __pyx_t_2 = (__pyx_v_worker == Py_None);
+  __pyx_t_1 = (__pyx_t_2 != 0);
+  if (__pyx_t_1) {
 
-    /* "common/db/dbConnector.pyx":187
+    /* "lets/common/db/dbConnector.pyx":189
  * 		worker = self.pool.getWorker()
  * 		if worker is None:
  * 			return None             # <<<<<<<<<<<<<<
@@ -4372,7 +4403,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
     __pyx_r = Py_None;
     goto __pyx_L0;
 
-    /* "common/db/dbConnector.pyx":186
+    /* "lets/common/db/dbConnector.pyx":188
  * 		cursor = None
  * 		worker = self.pool.getWorker()
  * 		if worker is None:             # <<<<<<<<<<<<<<
@@ -4381,7 +4412,7 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
  */
   }
 
-  /* "common/db/dbConnector.pyx":188
+  /* "lets/common/db/dbConnector.pyx":190
  * 		if worker is None:
  * 			return None
  * 		try:             # <<<<<<<<<<<<<<
@@ -4390,189 +4421,189 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
  */
   /*try:*/ {
 
-    /* "common/db/dbConnector.pyx":190
+    /* "lets/common/db/dbConnector.pyx":192
  * 		try:
  * 			# Create cursor, execute query and commit
  * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)             # <<<<<<<<<<<<<<
  * 			cursor.execute(query, params)
  * 			log.debug(query)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_worker, __pyx_n_s_connection); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 190, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_cursor); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_MySQLdb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 190, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_cursors); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 190, __pyx_L5_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_worker, __pyx_n_s_connection); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_cursor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_MySQLdb); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_cursors); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 192, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_DictCursor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 190, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_DictCursor); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_4);
       if (likely(__pyx_t_6)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_6);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_2, function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
       }
     }
     if (!__pyx_t_6) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L5_error)
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L6_error)
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_GOTREF(__pyx_t_3);
     } else {
       #if CYTHON_FAST_PYCALL
-      if (PyFunction_Check(__pyx_t_2)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_3};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L5_error)
+      if (PyFunction_Check(__pyx_t_4)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_5};
+        __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L6_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       } else
       #endif
       #if CYTHON_FAST_PYCCALL
-      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_3};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L5_error)
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_5};
+        __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L6_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 190, __pyx_L5_error)
+        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 192, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
-        __Pyx_GIVEREF(__pyx_t_3);
-        PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_3);
-        __pyx_t_3 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L5_error)
-        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_GIVEREF(__pyx_t_5);
+        PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_5);
+        __pyx_t_5 = 0;
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
     }
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF_SET(__pyx_v_cursor, __pyx_t_1);
-    __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF_SET(__pyx_v_cursor, __pyx_t_3);
+    __pyx_t_3 = 0;
 
-    /* "common/db/dbConnector.pyx":191
+    /* "lets/common/db/dbConnector.pyx":193
  * 			# Create cursor, execute query and commit
  * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
  * 			cursor.execute(query, params)             # <<<<<<<<<<<<<<
  * 			log.debug(query)
  * 			return cursor.lastrowid
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_execute); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 191, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_execute); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 193, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_7 = NULL;
     __pyx_t_8 = 0;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-      __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_2);
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_4);
       if (likely(__pyx_t_7)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_7);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_2, function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
         __pyx_t_8 = 1;
       }
     }
     #if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(__pyx_t_2)) {
+    if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_query, __pyx_v_params};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L5_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 193, __pyx_L6_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_GOTREF(__pyx_t_3);
     } else
     #endif
     #if CYTHON_FAST_PYCCALL
-    if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+    if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_query, __pyx_v_params};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L5_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 193, __pyx_L6_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_GOTREF(__pyx_t_3);
     } else
     #endif
     {
-      __pyx_t_3 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 193, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_5);
       if (__pyx_t_7) {
-        __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
+        __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7); __pyx_t_7 = NULL;
       }
       __Pyx_INCREF(__pyx_v_query);
       __Pyx_GIVEREF(__pyx_v_query);
-      PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_8, __pyx_v_query);
+      PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_8, __pyx_v_query);
       __Pyx_INCREF(__pyx_v_params);
       __Pyx_GIVEREF(__pyx_v_params);
-      PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_8, __pyx_v_params);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_8, __pyx_v_params);
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 193, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "common/db/dbConnector.pyx":192
+    /* "lets/common/db/dbConnector.pyx":194
  * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
  * 			cursor.execute(query, params)
  * 			log.debug(query)             # <<<<<<<<<<<<<<
  * 			return cursor.lastrowid
  * 		finally:
  */
-    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_log); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_debug); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = NULL;
-    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
-      if (likely(__pyx_t_2)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-        __Pyx_INCREF(__pyx_t_2);
+    __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_log); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 194, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_debug); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 194, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_4);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_3, function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
       }
     }
-    if (!__pyx_t_2) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_query); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_1);
+    if (!__pyx_t_4) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_query); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 194, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_3);
     } else {
       #if CYTHON_FAST_PYCALL
-      if (PyFunction_Check(__pyx_t_3)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_query};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L5_error)
-        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
+      if (PyFunction_Check(__pyx_t_5)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_query};
+        __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 194, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
       } else
       #endif
       #if CYTHON_FAST_PYCCALL
-      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_query};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L5_error)
-        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_query};
+        __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 194, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 192, __pyx_L5_error)
+        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 194, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_2); __pyx_t_2 = NULL;
+        __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_query);
         __Pyx_GIVEREF(__pyx_v_query);
         PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_v_query);
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L5_error)
-        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 194, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
     }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "common/db/dbConnector.pyx":193
+    /* "lets/common/db/dbConnector.pyx":195
  * 			cursor.execute(query, params)
  * 			log.debug(query)
  * 			return cursor.lastrowid             # <<<<<<<<<<<<<<
@@ -4580,14 +4611,14 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
  * 			# Close the cursor and release worker's lock
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_lastrowid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __pyx_r = __pyx_t_1;
-    __pyx_t_1 = 0;
-    goto __pyx_L4_return;
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_lastrowid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 195, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_r = __pyx_t_3;
+    __pyx_t_3 = 0;
+    goto __pyx_L5_return;
   }
 
-  /* "common/db/dbConnector.pyx":196
+  /* "lets/common/db/dbConnector.pyx":198
  * 		finally:
  * 			# Close the cursor and release worker's lock
  * 			if cursor is not None:             # <<<<<<<<<<<<<<
@@ -4595,16 +4626,16 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
  * 			if worker is not None:
  */
   /*finally:*/ {
-    __pyx_L5_error:;
+    __pyx_L6_error:;
     /*exception exit:*/{
       __Pyx_PyThreadState_declare
       __Pyx_PyThreadState_assign
       __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13) < 0)) __Pyx_ErrFetch(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13);
       __Pyx_XGOTREF(__pyx_t_11);
@@ -4615,847 +4646,40 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_2execute(CYTHON_UNUSED P
       __Pyx_XGOTREF(__pyx_t_16);
       __pyx_t_8 = __pyx_lineno; __pyx_t_9 = __pyx_clineno; __pyx_t_10 = __pyx_filename;
       {
-        __pyx_t_5 = (__pyx_v_cursor != Py_None);
-        __pyx_t_4 = (__pyx_t_5 != 0);
-        if (__pyx_t_4) {
-
-          /* "common/db/dbConnector.pyx":197
- * 			# Close the cursor and release worker's lock
- * 			if cursor is not None:
- * 				cursor.close()             # <<<<<<<<<<<<<<
- * 			if worker is not None:
- * 				self.pool.putWorker(worker)
- */
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 197, __pyx_L8_error)
-          __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_7 = NULL;
-          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-            __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_3);
-            if (likely(__pyx_t_7)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-              __Pyx_INCREF(__pyx_t_7);
-              __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_3, function);
-            }
-          }
-          if (__pyx_t_7) {
-            __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L8_error)
-            __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          } else {
-            __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L8_error)
-          }
-          __Pyx_GOTREF(__pyx_t_1);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-          /* "common/db/dbConnector.pyx":196
- * 		finally:
- * 			# Close the cursor and release worker's lock
- * 			if cursor is not None:             # <<<<<<<<<<<<<<
- * 				cursor.close()
- * 			if worker is not None:
- */
-        }
-
-        /* "common/db/dbConnector.pyx":198
- * 			if cursor is not None:
- * 				cursor.close()
- * 			if worker is not None:             # <<<<<<<<<<<<<<
- * 				self.pool.putWorker(worker)
- * 
- */
-        __pyx_t_4 = (__pyx_v_worker != Py_None);
-        __pyx_t_5 = (__pyx_t_4 != 0);
-        if (__pyx_t_5) {
-
-          /* "common/db/dbConnector.pyx":199
- * 				cursor.close()
- * 			if worker is not None:
- * 				self.pool.putWorker(worker)             # <<<<<<<<<<<<<<
- * 
- * 	def fetch(self, query, params = (), _all = False):
- */
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L8_error)
-          __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L8_error)
-          __Pyx_GOTREF(__pyx_t_7);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __pyx_t_3 = NULL;
-          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
-            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_7);
-            if (likely(__pyx_t_3)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-              __Pyx_INCREF(__pyx_t_3);
-              __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_7, function);
-            }
-          }
-          if (!__pyx_t_3) {
-            __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_v_worker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L8_error)
-            __Pyx_GOTREF(__pyx_t_1);
-          } else {
-            #if CYTHON_FAST_PYCALL
-            if (PyFunction_Check(__pyx_t_7)) {
-              PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_worker};
-              __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L8_error)
-              __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-              __Pyx_GOTREF(__pyx_t_1);
-            } else
-            #endif
-            #if CYTHON_FAST_PYCCALL
-            if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
-              PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_worker};
-              __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L8_error)
-              __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-              __Pyx_GOTREF(__pyx_t_1);
-            } else
-            #endif
-            {
-              __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 199, __pyx_L8_error)
-              __Pyx_GOTREF(__pyx_t_2);
-              __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3); __pyx_t_3 = NULL;
-              __Pyx_INCREF(__pyx_v_worker);
-              __Pyx_GIVEREF(__pyx_v_worker);
-              PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_v_worker);
-              __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L8_error)
-              __Pyx_GOTREF(__pyx_t_1);
-              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-            }
-          }
-          __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-          /* "common/db/dbConnector.pyx":198
- * 			if cursor is not None:
- * 				cursor.close()
- * 			if worker is not None:             # <<<<<<<<<<<<<<
- * 				self.pool.putWorker(worker)
- * 
- */
-        }
-      }
-      if (PY_MAJOR_VERSION >= 3) {
-        __Pyx_XGIVEREF(__pyx_t_14);
-        __Pyx_XGIVEREF(__pyx_t_15);
-        __Pyx_XGIVEREF(__pyx_t_16);
-        __Pyx_ExceptionReset(__pyx_t_14, __pyx_t_15, __pyx_t_16);
-      }
-      __Pyx_XGIVEREF(__pyx_t_11);
-      __Pyx_XGIVEREF(__pyx_t_12);
-      __Pyx_XGIVEREF(__pyx_t_13);
-      __Pyx_ErrRestore(__pyx_t_11, __pyx_t_12, __pyx_t_13);
-      __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
-      __pyx_lineno = __pyx_t_8; __pyx_clineno = __pyx_t_9; __pyx_filename = __pyx_t_10;
-      goto __pyx_L1_error;
-      __pyx_L8_error:;
-      if (PY_MAJOR_VERSION >= 3) {
-        __Pyx_XGIVEREF(__pyx_t_14);
-        __Pyx_XGIVEREF(__pyx_t_15);
-        __Pyx_XGIVEREF(__pyx_t_16);
-        __Pyx_ExceptionReset(__pyx_t_14, __pyx_t_15, __pyx_t_16);
-      }
-      __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
-      __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
-      goto __pyx_L1_error;
-    }
-    __pyx_L4_return: {
-      __pyx_t_16 = __pyx_r;
-      __pyx_r = 0;
-
-      /* "common/db/dbConnector.pyx":196
- * 		finally:
- * 			# Close the cursor and release worker's lock
- * 			if cursor is not None:             # <<<<<<<<<<<<<<
- * 				cursor.close()
- * 			if worker is not None:
- */
-      __pyx_t_5 = (__pyx_v_cursor != Py_None);
-      __pyx_t_4 = (__pyx_t_5 != 0);
-      if (__pyx_t_4) {
-
-        /* "common/db/dbConnector.pyx":197
- * 			# Close the cursor and release worker's lock
- * 			if cursor is not None:
- * 				cursor.close()             # <<<<<<<<<<<<<<
- * 			if worker is not None:
- * 				self.pool.putWorker(worker)
- */
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 197, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_2 = NULL;
-        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
-          __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_7);
-          if (likely(__pyx_t_2)) {
-            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-            __Pyx_INCREF(__pyx_t_2);
-            __Pyx_INCREF(function);
-            __Pyx_DECREF_SET(__pyx_t_7, function);
-          }
-        }
+        __pyx_t_1 = (__pyx_v_cursor != Py_None);
+        __pyx_t_2 = (__pyx_t_1 != 0);
         if (__pyx_t_2) {
-          __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
-          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        } else {
-          __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
-        }
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "common/db/dbConnector.pyx":196
- * 		finally:
- * 			# Close the cursor and release worker's lock
- * 			if cursor is not None:             # <<<<<<<<<<<<<<
- * 				cursor.close()
- * 			if worker is not None:
- */
-      }
-
-      /* "common/db/dbConnector.pyx":198
- * 			if cursor is not None:
- * 				cursor.close()
- * 			if worker is not None:             # <<<<<<<<<<<<<<
- * 				self.pool.putWorker(worker)
- * 
- */
-      __pyx_t_4 = (__pyx_v_worker != Py_None);
-      __pyx_t_5 = (__pyx_t_4 != 0);
-      if (__pyx_t_5) {
-
-        /* "common/db/dbConnector.pyx":199
- * 				cursor.close()
- * 			if worker is not None:
- * 				self.pool.putWorker(worker)             # <<<<<<<<<<<<<<
- * 
- * 	def fetch(self, query, params = (), _all = False):
- */
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 199, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_2);
-        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __pyx_t_7 = NULL;
-        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-          __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_2);
-          if (likely(__pyx_t_7)) {
-            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-            __Pyx_INCREF(__pyx_t_7);
-            __Pyx_INCREF(function);
-            __Pyx_DECREF_SET(__pyx_t_2, function);
-          }
-        }
-        if (!__pyx_t_7) {
-          __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_worker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
-        } else {
-          #if CYTHON_FAST_PYCALL
-          if (PyFunction_Check(__pyx_t_2)) {
-            PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_worker};
-            __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
-            __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-            __Pyx_GOTREF(__pyx_t_1);
-          } else
-          #endif
-          #if CYTHON_FAST_PYCCALL
-          if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-            PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_worker};
-            __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
-            __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-            __Pyx_GOTREF(__pyx_t_1);
-          } else
-          #endif
-          {
-            __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_3);
-            __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
-            __Pyx_INCREF(__pyx_v_worker);
-            __Pyx_GIVEREF(__pyx_v_worker);
-            PyTuple_SET_ITEM(__pyx_t_3, 0+1, __pyx_v_worker);
-            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_1);
-            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          }
-        }
-        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-        /* "common/db/dbConnector.pyx":198
- * 			if cursor is not None:
- * 				cursor.close()
- * 			if worker is not None:             # <<<<<<<<<<<<<<
- * 				self.pool.putWorker(worker)
- * 
- */
-      }
-      __pyx_r = __pyx_t_16;
-      __pyx_t_16 = 0;
-      goto __pyx_L0;
-    }
-  }
-
-  /* "common/db/dbConnector.pyx":177
- * 		self.pool = connectionsPool(host, username, password, database, initialSize)
- * 
- * 	def execute(self, query, params = ()):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Executes a query
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("common.db.dbConnector.db.execute", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __Pyx_XDECREF(__pyx_v_cursor);
-  __Pyx_XDECREF(__pyx_v_worker);
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "common/db/dbConnector.pyx":201
- * 				self.pool.putWorker(worker)
- * 
- * 	def fetch(self, query, params = (), _all = False):             # <<<<<<<<<<<<<<
- * 		"""
- * 		Fetch a single value from db that matches given query
- */
-
-/* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_5fetch(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_2db_4fetch[] = "\n\t\tFetch a single value from db that matches given query\n\n\t\t:param query: query to execute. You can bind parameters with %s\n\t\t:param params: parameters list. First element replaces first %s and so on\n\t\t:param _all: fetch one or all values. Used internally. Use fetchAll if you want to fetch all values\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_2db_5fetch = {"fetch", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_2db_5fetch, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_2db_4fetch};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_5fetch(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  PyObject *__pyx_v_self = 0;
-  PyObject *__pyx_v_query = 0;
-  PyObject *__pyx_v_params = 0;
-  PyObject *__pyx_v__all = 0;
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("fetch (wrapper)", 0);
-  {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_query,&__pyx_n_s_params,&__pyx_n_s_all,0};
-    PyObject* values[4] = {0,0,0,0};
-    values[2] = ((PyObject *)((PyObject*)__pyx_empty_tuple));
-    values[3] = ((PyObject *)((PyObject *)Py_False));
-    if (unlikely(__pyx_kwds)) {
-      Py_ssize_t kw_args;
-      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
-      switch (pos_args) {
-        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
-        CYTHON_FALLTHROUGH;
-        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
-        CYTHON_FALLTHROUGH;
-        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
-        CYTHON_FALLTHROUGH;
-        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-        CYTHON_FALLTHROUGH;
-        case  0: break;
-        default: goto __pyx_L5_argtuple_error;
-      }
-      kw_args = PyDict_Size(__pyx_kwds);
-      switch (pos_args) {
-        case  0:
-        if (likely((values[0] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_self)) != 0)) kw_args--;
-        else goto __pyx_L5_argtuple_error;
-        CYTHON_FALLTHROUGH;
-        case  1:
-        if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_query)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("fetch", 0, 2, 4, 1); __PYX_ERR(0, 201, __pyx_L3_error)
-        }
-        CYTHON_FALLTHROUGH;
-        case  2:
-        if (kw_args > 0) {
-          PyObject* value = PyDict_GetItem(__pyx_kwds, __pyx_n_s_params);
-          if (value) { values[2] = value; kw_args--; }
-        }
-        CYTHON_FALLTHROUGH;
-        case  3:
-        if (kw_args > 0) {
-          PyObject* value = PyDict_GetItem(__pyx_kwds, __pyx_n_s_all);
-          if (value) { values[3] = value; kw_args--; }
-        }
-      }
-      if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fetch") < 0)) __PYX_ERR(0, 201, __pyx_L3_error)
-      }
-    } else {
-      switch (PyTuple_GET_SIZE(__pyx_args)) {
-        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
-        CYTHON_FALLTHROUGH;
-        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
-        CYTHON_FALLTHROUGH;
-        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
-        values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-        break;
-        default: goto __pyx_L5_argtuple_error;
-      }
-    }
-    __pyx_v_self = values[0];
-    __pyx_v_query = values[1];
-    __pyx_v_params = values[2];
-    __pyx_v__all = values[3];
-  }
-  goto __pyx_L4_argument_unpacking_done;
-  __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("fetch", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 201, __pyx_L3_error)
-  __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.db.fetch", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __Pyx_RefNannyFinishContext();
-  return NULL;
-  __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_2db_4fetch(__pyx_self, __pyx_v_self, __pyx_v_query, __pyx_v_params, __pyx_v__all);
-
-  /* function exit code */
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params, PyObject *__pyx_v__all) {
-  PyObject *__pyx_v_cursor = NULL;
-  PyObject *__pyx_v_worker = NULL;
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
-  PyObject *__pyx_t_3 = NULL;
-  int __pyx_t_4;
-  int __pyx_t_5;
-  PyObject *__pyx_t_6 = NULL;
-  PyObject *__pyx_t_7 = NULL;
-  int __pyx_t_8;
-  int __pyx_t_9;
-  char const *__pyx_t_10;
-  PyObject *__pyx_t_11 = NULL;
-  PyObject *__pyx_t_12 = NULL;
-  PyObject *__pyx_t_13 = NULL;
-  PyObject *__pyx_t_14 = NULL;
-  PyObject *__pyx_t_15 = NULL;
-  PyObject *__pyx_t_16 = NULL;
-  __Pyx_RefNannySetupContext("fetch", 0);
-
-  /* "common/db/dbConnector.pyx":209
- * 		:param _all: fetch one or all values. Used internally. Use fetchAll if you want to fetch all values
- * 		"""
- * 		cursor = None             # <<<<<<<<<<<<<<
- * 		worker = self.pool.getWorker()
- * 		if worker is None:
- */
-  __Pyx_INCREF(Py_None);
-  __pyx_v_cursor = Py_None;
-
-  /* "common/db/dbConnector.pyx":210
- * 		"""
- * 		cursor = None
- * 		worker = self.pool.getWorker()             # <<<<<<<<<<<<<<
- * 		if worker is None:
- * 			return None
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 210, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_getWorker); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 210, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = NULL;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-    __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
-    if (likely(__pyx_t_2)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_2);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_3, function);
-    }
-  }
-  if (__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
-  }
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_v_worker = __pyx_t_1;
-  __pyx_t_1 = 0;
-
-  /* "common/db/dbConnector.pyx":211
- * 		cursor = None
- * 		worker = self.pool.getWorker()
- * 		if worker is None:             # <<<<<<<<<<<<<<
- * 			return None
- * 		try:
- */
-  __pyx_t_4 = (__pyx_v_worker == Py_None);
-  __pyx_t_5 = (__pyx_t_4 != 0);
-  if (__pyx_t_5) {
-
-    /* "common/db/dbConnector.pyx":212
- * 		worker = self.pool.getWorker()
- * 		if worker is None:
- * 			return None             # <<<<<<<<<<<<<<
- * 		try:
- * 			# Create cursor, execute the query and fetch one/all result(s)
- */
-    __Pyx_XDECREF(__pyx_r);
-    __Pyx_INCREF(Py_None);
-    __pyx_r = Py_None;
-    goto __pyx_L0;
-
-    /* "common/db/dbConnector.pyx":211
- * 		cursor = None
- * 		worker = self.pool.getWorker()
- * 		if worker is None:             # <<<<<<<<<<<<<<
- * 			return None
- * 		try:
- */
-  }
-
-  /* "common/db/dbConnector.pyx":213
- * 		if worker is None:
- * 			return None
- * 		try:             # <<<<<<<<<<<<<<
- * 			# Create cursor, execute the query and fetch one/all result(s)
- * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
- */
-  /*try:*/ {
-
-    /* "common/db/dbConnector.pyx":215
- * 		try:
- * 			# Create cursor, execute the query and fetch one/all result(s)
- * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)             # <<<<<<<<<<<<<<
- * 			cursor.execute(query, params)
- * 			log.debug(query)
- */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_worker, __pyx_n_s_connection); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_cursor); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_MySQLdb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_cursors); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_DictCursor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
-      if (likely(__pyx_t_6)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-        __Pyx_INCREF(__pyx_t_6);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_2, function);
-      }
-    }
-    if (!__pyx_t_6) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L5_error)
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
-    } else {
-      #if CYTHON_FAST_PYCALL
-      if (PyFunction_Check(__pyx_t_2)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_3};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L5_error)
-        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      } else
-      #endif
-      #if CYTHON_FAST_PYCCALL
-      if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_3};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L5_error)
-        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      } else
-      #endif
-      {
-        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 215, __pyx_L5_error)
-        __Pyx_GOTREF(__pyx_t_7);
-        __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
-        __Pyx_GIVEREF(__pyx_t_3);
-        PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_3);
-        __pyx_t_3 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L5_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      }
-    }
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF_SET(__pyx_v_cursor, __pyx_t_1);
-    __pyx_t_1 = 0;
-
-    /* "common/db/dbConnector.pyx":216
- * 			# Create cursor, execute the query and fetch one/all result(s)
- * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
- * 			cursor.execute(query, params)             # <<<<<<<<<<<<<<
- * 			log.debug(query)
- * 			if _all:
- */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_execute); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = NULL;
-    __pyx_t_8 = 0;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-      __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_2);
-      if (likely(__pyx_t_7)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-        __Pyx_INCREF(__pyx_t_7);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_2, function);
-        __pyx_t_8 = 1;
-      }
-    }
-    #if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(__pyx_t_2)) {
-      PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_query, __pyx_v_params};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L5_error)
-      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
-    } else
-    #endif
-    #if CYTHON_FAST_PYCCALL
-    if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-      PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_query, __pyx_v_params};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L5_error)
-      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __Pyx_GOTREF(__pyx_t_1);
-    } else
-    #endif
-    {
-      __pyx_t_3 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 216, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      if (__pyx_t_7) {
-        __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
-      }
-      __Pyx_INCREF(__pyx_v_query);
-      __Pyx_GIVEREF(__pyx_v_query);
-      PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_8, __pyx_v_query);
-      __Pyx_INCREF(__pyx_v_params);
-      __Pyx_GIVEREF(__pyx_v_params);
-      PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_8, __pyx_v_params);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    }
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-    /* "common/db/dbConnector.pyx":217
- * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
- * 			cursor.execute(query, params)
- * 			log.debug(query)             # <<<<<<<<<<<<<<
- * 			if _all:
- * 				return cursor.fetchall()
- */
-    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_log); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_debug); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 217, __pyx_L5_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = NULL;
-    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
-      if (likely(__pyx_t_2)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-        __Pyx_INCREF(__pyx_t_2);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_3, function);
-      }
-    }
-    if (!__pyx_t_2) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_query); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_1);
-    } else {
-      #if CYTHON_FAST_PYCALL
-      if (PyFunction_Check(__pyx_t_3)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_query};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L5_error)
-        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
-      } else
-      #endif
-      #if CYTHON_FAST_PYCCALL
-      if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-        PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_query};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L5_error)
-        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __Pyx_GOTREF(__pyx_t_1);
-      } else
-      #endif
-      {
-        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 217, __pyx_L5_error)
-        __Pyx_GOTREF(__pyx_t_7);
-        __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_2); __pyx_t_2 = NULL;
-        __Pyx_INCREF(__pyx_v_query);
-        __Pyx_GIVEREF(__pyx_v_query);
-        PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_v_query);
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L5_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      }
-    }
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-    /* "common/db/dbConnector.pyx":218
- * 			cursor.execute(query, params)
- * 			log.debug(query)
- * 			if _all:             # <<<<<<<<<<<<<<
- * 				return cursor.fetchall()
- * 			else:
- */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v__all); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 218, __pyx_L5_error)
-    if (__pyx_t_5) {
-
-      /* "common/db/dbConnector.pyx":219
- * 			log.debug(query)
- * 			if _all:
- * 				return cursor.fetchall()             # <<<<<<<<<<<<<<
- * 			else:
- * 				return cursor.fetchone()
- */
-      __Pyx_XDECREF(__pyx_r);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_fetchall); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_7 = NULL;
-      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-        __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_3);
-        if (likely(__pyx_t_7)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-          __Pyx_INCREF(__pyx_t_7);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_3, function);
-        }
-      }
-      if (__pyx_t_7) {
-        __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L5_error)
-        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      } else {
-        __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L5_error)
-      }
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_r = __pyx_t_1;
-      __pyx_t_1 = 0;
-      goto __pyx_L4_return;
-
-      /* "common/db/dbConnector.pyx":218
- * 			cursor.execute(query, params)
- * 			log.debug(query)
- * 			if _all:             # <<<<<<<<<<<<<<
- * 				return cursor.fetchall()
- * 			else:
- */
-    }
-
-    /* "common/db/dbConnector.pyx":221
- * 				return cursor.fetchall()
- * 			else:
- * 				return cursor.fetchone()             # <<<<<<<<<<<<<<
- * 		finally:
- * 			# Close the cursor and release worker's lock
- */
-    /*else*/ {
-      __Pyx_XDECREF(__pyx_r);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_fetchone); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L5_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_7 = NULL;
-      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-        __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_3);
-        if (likely(__pyx_t_7)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-          __Pyx_INCREF(__pyx_t_7);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_3, function);
-        }
-      }
-      if (__pyx_t_7) {
-        __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L5_error)
-        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      } else {
-        __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L5_error)
-      }
-      __Pyx_GOTREF(__pyx_t_1);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_r = __pyx_t_1;
-      __pyx_t_1 = 0;
-      goto __pyx_L4_return;
-    }
-  }
-
-  /* "common/db/dbConnector.pyx":224
- * 		finally:
- * 			# Close the cursor and release worker's lock
- * 			if cursor is not None:             # <<<<<<<<<<<<<<
- * 				cursor.close()
- * 			if worker is not None:
- */
-  /*finally:*/ {
-    __pyx_L5_error:;
-    /*exception exit:*/{
-      __Pyx_PyThreadState_declare
-      __Pyx_PyThreadState_assign
-      __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
-      __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
-      if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13) < 0)) __Pyx_ErrFetch(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13);
-      __Pyx_XGOTREF(__pyx_t_11);
-      __Pyx_XGOTREF(__pyx_t_12);
-      __Pyx_XGOTREF(__pyx_t_13);
-      __Pyx_XGOTREF(__pyx_t_14);
-      __Pyx_XGOTREF(__pyx_t_15);
-      __Pyx_XGOTREF(__pyx_t_16);
-      __pyx_t_8 = __pyx_lineno; __pyx_t_9 = __pyx_clineno; __pyx_t_10 = __pyx_filename;
-      {
-        __pyx_t_5 = (__pyx_v_cursor != Py_None);
-        __pyx_t_4 = (__pyx_t_5 != 0);
-        if (__pyx_t_4) {
-
-          /* "common/db/dbConnector.pyx":225
+          /* "lets/common/db/dbConnector.pyx":199
  * 			# Close the cursor and release worker's lock
  * 			if cursor is not None:
  * 				cursor.close()             # <<<<<<<<<<<<<<
  * 			if worker is not None:
  * 				self.pool.putWorker(worker)
  */
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 225, __pyx_L9_error)
-          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L9_error)
+          __Pyx_GOTREF(__pyx_t_5);
           __pyx_t_7 = NULL;
-          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
-            __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_3);
+          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+            __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_5);
             if (likely(__pyx_t_7)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
               __Pyx_INCREF(__pyx_t_7);
               __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_3, function);
+              __Pyx_DECREF_SET(__pyx_t_5, function);
             }
           }
           if (__pyx_t_7) {
-            __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L9_error)
+            __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L9_error)
             __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           } else {
-            __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L9_error)
+            __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L9_error)
           }
-          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-          /* "common/db/dbConnector.pyx":224
+          /* "lets/common/db/dbConnector.pyx":198
  * 		finally:
  * 			# Close the cursor and release worker's lock
  * 			if cursor is not None:             # <<<<<<<<<<<<<<
@@ -5464,75 +4688,75 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyO
  */
         }
 
-        /* "common/db/dbConnector.pyx":226
+        /* "lets/common/db/dbConnector.pyx":200
  * 			if cursor is not None:
  * 				cursor.close()
  * 			if worker is not None:             # <<<<<<<<<<<<<<
  * 				self.pool.putWorker(worker)
  * 
  */
-        __pyx_t_4 = (__pyx_v_worker != Py_None);
-        __pyx_t_5 = (__pyx_t_4 != 0);
-        if (__pyx_t_5) {
+        __pyx_t_2 = (__pyx_v_worker != Py_None);
+        __pyx_t_1 = (__pyx_t_2 != 0);
+        if (__pyx_t_1) {
 
-          /* "common/db/dbConnector.pyx":227
+          /* "lets/common/db/dbConnector.pyx":201
  * 				cursor.close()
  * 			if worker is not None:
  * 				self.pool.putWorker(worker)             # <<<<<<<<<<<<<<
  * 
- * 	def fetchAll(self, query, params = ()):
+ * 	def fetch(self, query, params=None, _all=False):
  */
-          __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 227, __pyx_L9_error)
-          __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 227, __pyx_L9_error)
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 201, __pyx_L9_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 201, __pyx_L9_error)
           __Pyx_GOTREF(__pyx_t_7);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          __pyx_t_3 = NULL;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __pyx_t_5 = NULL;
           if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
-            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_7);
-            if (likely(__pyx_t_3)) {
+            __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_7);
+            if (likely(__pyx_t_5)) {
               PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(__pyx_t_5);
               __Pyx_INCREF(function);
               __Pyx_DECREF_SET(__pyx_t_7, function);
             }
           }
-          if (!__pyx_t_3) {
-            __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_v_worker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L9_error)
-            __Pyx_GOTREF(__pyx_t_1);
+          if (!__pyx_t_5) {
+            __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_v_worker); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L9_error)
+            __Pyx_GOTREF(__pyx_t_3);
           } else {
             #if CYTHON_FAST_PYCALL
             if (PyFunction_Check(__pyx_t_7)) {
-              PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_worker};
-              __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L9_error)
-              __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-              __Pyx_GOTREF(__pyx_t_1);
+              PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_worker};
+              __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L9_error)
+              __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+              __Pyx_GOTREF(__pyx_t_3);
             } else
             #endif
             #if CYTHON_FAST_PYCCALL
             if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
-              PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_v_worker};
-              __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L9_error)
-              __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-              __Pyx_GOTREF(__pyx_t_1);
+              PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_worker};
+              __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L9_error)
+              __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+              __Pyx_GOTREF(__pyx_t_3);
             } else
             #endif
             {
-              __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L9_error)
-              __Pyx_GOTREF(__pyx_t_2);
-              __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3); __pyx_t_3 = NULL;
+              __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 201, __pyx_L9_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
               __Pyx_INCREF(__pyx_v_worker);
               __Pyx_GIVEREF(__pyx_v_worker);
-              PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_v_worker);
-              __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L9_error)
-              __Pyx_GOTREF(__pyx_t_1);
-              __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+              PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_worker);
+              __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L9_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             }
           }
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-          /* "common/db/dbConnector.pyx":226
+          /* "lets/common/db/dbConnector.pyx":200
  * 			if cursor is not None:
  * 				cursor.close()
  * 			if worker is not None:             # <<<<<<<<<<<<<<
@@ -5567,51 +4791,51 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyO
       __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
       goto __pyx_L1_error;
     }
-    __pyx_L4_return: {
+    __pyx_L5_return: {
       __pyx_t_16 = __pyx_r;
       __pyx_r = 0;
 
-      /* "common/db/dbConnector.pyx":224
+      /* "lets/common/db/dbConnector.pyx":198
  * 		finally:
  * 			# Close the cursor and release worker's lock
  * 			if cursor is not None:             # <<<<<<<<<<<<<<
  * 				cursor.close()
  * 			if worker is not None:
  */
-      __pyx_t_5 = (__pyx_v_cursor != Py_None);
-      __pyx_t_4 = (__pyx_t_5 != 0);
-      if (__pyx_t_4) {
+      __pyx_t_1 = (__pyx_v_cursor != Py_None);
+      __pyx_t_2 = (__pyx_t_1 != 0);
+      if (__pyx_t_2) {
 
-        /* "common/db/dbConnector.pyx":225
+        /* "lets/common/db/dbConnector.pyx":199
  * 			# Close the cursor and release worker's lock
  * 			if cursor is not None:
  * 				cursor.close()             # <<<<<<<<<<<<<<
  * 			if worker is not None:
  * 				self.pool.putWorker(worker)
  */
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 225, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_2 = NULL;
+        __pyx_t_4 = NULL;
         if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
-          __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_7);
-          if (likely(__pyx_t_2)) {
+          __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_7);
+          if (likely(__pyx_t_4)) {
             PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
-            __Pyx_INCREF(__pyx_t_2);
+            __Pyx_INCREF(__pyx_t_4);
             __Pyx_INCREF(function);
             __Pyx_DECREF_SET(__pyx_t_7, function);
           }
         }
-        if (__pyx_t_2) {
-          __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
-          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        if (__pyx_t_4) {
+          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         } else {
-          __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
         }
-        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "common/db/dbConnector.pyx":224
+        /* "lets/common/db/dbConnector.pyx":198
  * 		finally:
  * 			# Close the cursor and release worker's lock
  * 			if cursor is not None:             # <<<<<<<<<<<<<<
@@ -5620,75 +4844,75 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyO
  */
       }
 
-      /* "common/db/dbConnector.pyx":226
+      /* "lets/common/db/dbConnector.pyx":200
  * 			if cursor is not None:
  * 				cursor.close()
  * 			if worker is not None:             # <<<<<<<<<<<<<<
  * 				self.pool.putWorker(worker)
  * 
  */
-      __pyx_t_4 = (__pyx_v_worker != Py_None);
-      __pyx_t_5 = (__pyx_t_4 != 0);
-      if (__pyx_t_5) {
+      __pyx_t_2 = (__pyx_v_worker != Py_None);
+      __pyx_t_1 = (__pyx_t_2 != 0);
+      if (__pyx_t_1) {
 
-        /* "common/db/dbConnector.pyx":227
+        /* "lets/common/db/dbConnector.pyx":201
  * 				cursor.close()
  * 			if worker is not None:
  * 				self.pool.putWorker(worker)             # <<<<<<<<<<<<<<
  * 
- * 	def fetchAll(self, query, params = ()):
+ * 	def fetch(self, query, params=None, _all=False):
  */
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 227, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 201, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_2);
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 201, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         __pyx_t_7 = NULL;
-        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-          __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_2);
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+          __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_4);
           if (likely(__pyx_t_7)) {
-            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
             __Pyx_INCREF(__pyx_t_7);
             __Pyx_INCREF(function);
-            __Pyx_DECREF_SET(__pyx_t_2, function);
+            __Pyx_DECREF_SET(__pyx_t_4, function);
           }
         }
         if (!__pyx_t_7) {
-          __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_worker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_worker); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
         } else {
           #if CYTHON_FAST_PYCALL
-          if (PyFunction_Check(__pyx_t_2)) {
+          if (PyFunction_Check(__pyx_t_4)) {
             PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_worker};
-            __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+            __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L1_error)
             __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-            __Pyx_GOTREF(__pyx_t_1);
+            __Pyx_GOTREF(__pyx_t_3);
           } else
           #endif
           #if CYTHON_FAST_PYCCALL
-          if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+          if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
             PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_worker};
-            __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+            __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L1_error)
             __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-            __Pyx_GOTREF(__pyx_t_1);
+            __Pyx_GOTREF(__pyx_t_3);
           } else
           #endif
           {
-            __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 227, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_3);
-            __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_7); __pyx_t_7 = NULL;
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 201, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7); __pyx_t_7 = NULL;
             __Pyx_INCREF(__pyx_v_worker);
             __Pyx_GIVEREF(__pyx_v_worker);
-            PyTuple_SET_ITEM(__pyx_t_3, 0+1, __pyx_v_worker);
-            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_1);
-            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+            PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_worker);
+            __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 201, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_3);
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           }
         }
-        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "common/db/dbConnector.pyx":226
+        /* "lets/common/db/dbConnector.pyx":200
  * 			if cursor is not None:
  * 				cursor.close()
  * 			if worker is not None:             # <<<<<<<<<<<<<<
@@ -5702,44 +4926,884 @@ static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyO
     }
   }
 
-  /* "common/db/dbConnector.pyx":201
+  /* "lets/common/db/dbConnector.pyx":177
+ * 		self.pool = connectionsPool(host, username, password, database, initialSize)
+ * 
+ * 	def execute(self, query, params=None):             # <<<<<<<<<<<<<<
+ * 		"""
+ * 		Executes a query
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_6);
+  __Pyx_XDECREF(__pyx_t_7);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.execute", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_cursor);
+  __Pyx_XDECREF(__pyx_v_worker);
+  __Pyx_XDECREF(__pyx_v_params);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "lets/common/db/dbConnector.pyx":203
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetch(self, query, params = (), _all = False):             # <<<<<<<<<<<<<<
+ * 	def fetch(self, query, params=None, _all=False):             # <<<<<<<<<<<<<<
+ * 		"""
+ * 		Fetch a single value from db that matches given query
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_5fetch(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_2db_4fetch[] = "\n\t\tFetch a single value from db that matches given query\n\n\t\t:param query: query to execute. You can bind parameters with %s\n\t\t:param params: parameters list. First element replaces first %s and so on\n\t\t:param _all: fetch one or all values. Used internally. Use fetchAll if you want to fetch all values\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_2db_5fetch = {"fetch", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_2db_5fetch, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_2db_4fetch};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_5fetch(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  PyObject *__pyx_v_self = 0;
+  PyObject *__pyx_v_query = 0;
+  PyObject *__pyx_v_params = 0;
+  PyObject *__pyx_v__all = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("fetch (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_query,&__pyx_n_s_params,&__pyx_n_s_all,0};
+    PyObject* values[4] = {0,0,0,0};
+    values[2] = ((PyObject *)((PyObject *)Py_None));
+    values[3] = ((PyObject *)((PyObject *)Py_False));
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_self)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_query)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("fetch", 0, 2, 4, 1); __PYX_ERR(0, 203, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (kw_args > 0) {
+          PyObject* value = PyDict_GetItem(__pyx_kwds, __pyx_n_s_params);
+          if (value) { values[2] = value; kw_args--; }
+        }
+        CYTHON_FALLTHROUGH;
+        case  3:
+        if (kw_args > 0) {
+          PyObject* value = PyDict_GetItem(__pyx_kwds, __pyx_n_s_all);
+          if (value) { values[3] = value; kw_args--; }
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fetch") < 0)) __PYX_ERR(0, 203, __pyx_L3_error)
+      }
+    } else {
+      switch (PyTuple_GET_SIZE(__pyx_args)) {
+        case  4: values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
+        CYTHON_FALLTHROUGH;
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+    }
+    __pyx_v_self = values[0];
+    __pyx_v_query = values[1];
+    __pyx_v_params = values[2];
+    __pyx_v__all = values[3];
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("fetch", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 203, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.fetch", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_2db_4fetch(__pyx_self, __pyx_v_self, __pyx_v_query, __pyx_v_params, __pyx_v__all);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db_4fetch(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params, PyObject *__pyx_v__all) {
+  PyObject *__pyx_v_cursor = NULL;
+  PyObject *__pyx_v_worker = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
+  int __pyx_t_2;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  int __pyx_t_8;
+  int __pyx_t_9;
+  char const *__pyx_t_10;
+  PyObject *__pyx_t_11 = NULL;
+  PyObject *__pyx_t_12 = NULL;
+  PyObject *__pyx_t_13 = NULL;
+  PyObject *__pyx_t_14 = NULL;
+  PyObject *__pyx_t_15 = NULL;
+  PyObject *__pyx_t_16 = NULL;
+  __Pyx_RefNannySetupContext("fetch", 0);
+  __Pyx_INCREF(__pyx_v_params);
+
+  /* "lets/common/db/dbConnector.pyx":211
+ * 		:param _all: fetch one or all values. Used internally. Use fetchAll if you want to fetch all values
+ * 		"""
+ * 		if params is None:             # <<<<<<<<<<<<<<
+ * 			params = ()
+ * 		cursor = None
+ */
+  __pyx_t_1 = (__pyx_v_params == Py_None);
+  __pyx_t_2 = (__pyx_t_1 != 0);
+  if (__pyx_t_2) {
+
+    /* "lets/common/db/dbConnector.pyx":212
+ * 		"""
+ * 		if params is None:
+ * 			params = ()             # <<<<<<<<<<<<<<
+ * 		cursor = None
+ * 		worker = self.pool.getWorker()
+ */
+    __Pyx_INCREF(__pyx_empty_tuple);
+    __Pyx_DECREF_SET(__pyx_v_params, __pyx_empty_tuple);
+
+    /* "lets/common/db/dbConnector.pyx":211
+ * 		:param _all: fetch one or all values. Used internally. Use fetchAll if you want to fetch all values
+ * 		"""
+ * 		if params is None:             # <<<<<<<<<<<<<<
+ * 			params = ()
+ * 		cursor = None
+ */
+  }
+
+  /* "lets/common/db/dbConnector.pyx":213
+ * 		if params is None:
+ * 			params = ()
+ * 		cursor = None             # <<<<<<<<<<<<<<
+ * 		worker = self.pool.getWorker()
+ * 		if worker is None:
+ */
+  __Pyx_INCREF(Py_None);
+  __pyx_v_cursor = Py_None;
+
+  /* "lets/common/db/dbConnector.pyx":214
+ * 			params = ()
+ * 		cursor = None
+ * 		worker = self.pool.getWorker()             # <<<<<<<<<<<<<<
+ * 		if worker is None:
+ * 			return None
+ */
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_getWorker); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_t_4 = NULL;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+    __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_5);
+    if (likely(__pyx_t_4)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+      __Pyx_INCREF(__pyx_t_4);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_5, function);
+    }
+  }
+  if (__pyx_t_4) {
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else {
+    __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
+  }
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_worker = __pyx_t_3;
+  __pyx_t_3 = 0;
+
+  /* "lets/common/db/dbConnector.pyx":215
+ * 		cursor = None
+ * 		worker = self.pool.getWorker()
+ * 		if worker is None:             # <<<<<<<<<<<<<<
+ * 			return None
+ * 		try:
+ */
+  __pyx_t_2 = (__pyx_v_worker == Py_None);
+  __pyx_t_1 = (__pyx_t_2 != 0);
+  if (__pyx_t_1) {
+
+    /* "lets/common/db/dbConnector.pyx":216
+ * 		worker = self.pool.getWorker()
+ * 		if worker is None:
+ * 			return None             # <<<<<<<<<<<<<<
+ * 		try:
+ * 			# Create cursor, execute the query and fetch one/all result(s)
+ */
+    __Pyx_XDECREF(__pyx_r);
+    __Pyx_INCREF(Py_None);
+    __pyx_r = Py_None;
+    goto __pyx_L0;
+
+    /* "lets/common/db/dbConnector.pyx":215
+ * 		cursor = None
+ * 		worker = self.pool.getWorker()
+ * 		if worker is None:             # <<<<<<<<<<<<<<
+ * 			return None
+ * 		try:
+ */
+  }
+
+  /* "lets/common/db/dbConnector.pyx":217
+ * 		if worker is None:
+ * 			return None
+ * 		try:             # <<<<<<<<<<<<<<
+ * 			# Create cursor, execute the query and fetch one/all result(s)
+ * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
+ */
+  /*try:*/ {
+
+    /* "lets/common/db/dbConnector.pyx":219
+ * 		try:
+ * 			# Create cursor, execute the query and fetch one/all result(s)
+ * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)             # <<<<<<<<<<<<<<
+ * 			cursor.execute(query, params)
+ * 			log.debug(query)
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_worker, __pyx_n_s_connection); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 219, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_cursor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 219, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_MySQLdb); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 219, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_cursors); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 219, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_DictCursor); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 219, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __pyx_t_6 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_6)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_6);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+      }
+    }
+    if (!__pyx_t_6) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L6_error)
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_GOTREF(__pyx_t_3);
+    } else {
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_4)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_5};
+        __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_5};
+        __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 219, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_7);
+        __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
+        __Pyx_GIVEREF(__pyx_t_5);
+        PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_5);
+        __pyx_t_5 = 0;
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 219, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+      }
+    }
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF_SET(__pyx_v_cursor, __pyx_t_3);
+    __pyx_t_3 = 0;
+
+    /* "lets/common/db/dbConnector.pyx":220
+ * 			# Create cursor, execute the query and fetch one/all result(s)
+ * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
+ * 			cursor.execute(query, params)             # <<<<<<<<<<<<<<
+ * 			log.debug(query)
+ * 			if _all:
+ */
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_execute); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 220, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_7 = NULL;
+    __pyx_t_8 = 0;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+      __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_4);
+      if (likely(__pyx_t_7)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+        __Pyx_INCREF(__pyx_t_7);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_4, function);
+        __pyx_t_8 = 1;
+      }
+    }
+    #if CYTHON_FAST_PYCALL
+    if (PyFunction_Check(__pyx_t_4)) {
+      PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_query, __pyx_v_params};
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L6_error)
+      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+      __Pyx_GOTREF(__pyx_t_3);
+    } else
+    #endif
+    #if CYTHON_FAST_PYCCALL
+    if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+      PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_query, __pyx_v_params};
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L6_error)
+      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+      __Pyx_GOTREF(__pyx_t_3);
+    } else
+    #endif
+    {
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 220, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      if (__pyx_t_7) {
+        __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7); __pyx_t_7 = NULL;
+      }
+      __Pyx_INCREF(__pyx_v_query);
+      __Pyx_GIVEREF(__pyx_v_query);
+      PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_8, __pyx_v_query);
+      __Pyx_INCREF(__pyx_v_params);
+      __Pyx_GIVEREF(__pyx_v_params);
+      PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_8, __pyx_v_params);
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 220, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    }
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+    /* "lets/common/db/dbConnector.pyx":221
+ * 			cursor = worker.connection.cursor(MySQLdb.cursors.DictCursor)
+ * 			cursor.execute(query, params)
+ * 			log.debug(query)             # <<<<<<<<<<<<<<
+ * 			if _all:
+ * 				return cursor.fetchall()
+ */
+    __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_log); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 221, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_debug); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 221, __pyx_L6_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_4)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_4);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    if (!__pyx_t_4) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_query); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_3);
+    } else {
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_5)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_query};
+        __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
+        PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_v_query};
+        __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L6_error)
+        __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_GOTREF(__pyx_t_3);
+      } else
+      #endif
+      {
+        __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 221, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_7);
+        __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_4); __pyx_t_4 = NULL;
+        __Pyx_INCREF(__pyx_v_query);
+        __Pyx_GIVEREF(__pyx_v_query);
+        PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_v_query);
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L6_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+      }
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+    /* "lets/common/db/dbConnector.pyx":222
+ * 			cursor.execute(query, params)
+ * 			log.debug(query)
+ * 			if _all:             # <<<<<<<<<<<<<<
+ * 				return cursor.fetchall()
+ * 			else:
+ */
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v__all); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 222, __pyx_L6_error)
+    if (__pyx_t_1) {
+
+      /* "lets/common/db/dbConnector.pyx":223
+ * 			log.debug(query)
+ * 			if _all:
+ * 				return cursor.fetchall()             # <<<<<<<<<<<<<<
+ * 			else:
+ * 				return cursor.fetchone()
+ */
+      __Pyx_XDECREF(__pyx_r);
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_fetchall); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 223, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_7 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+        __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_5);
+        if (likely(__pyx_t_7)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+          __Pyx_INCREF(__pyx_t_7);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_5, function);
+        }
+      }
+      if (__pyx_t_7) {
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 223, __pyx_L6_error)
+        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+      } else {
+        __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 223, __pyx_L6_error)
+      }
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_r = __pyx_t_3;
+      __pyx_t_3 = 0;
+      goto __pyx_L5_return;
+
+      /* "lets/common/db/dbConnector.pyx":222
+ * 			cursor.execute(query, params)
+ * 			log.debug(query)
+ * 			if _all:             # <<<<<<<<<<<<<<
+ * 				return cursor.fetchall()
+ * 			else:
+ */
+    }
+
+    /* "lets/common/db/dbConnector.pyx":225
+ * 				return cursor.fetchall()
+ * 			else:
+ * 				return cursor.fetchone()             # <<<<<<<<<<<<<<
+ * 		finally:
+ * 			# Close the cursor and release worker's lock
+ */
+    /*else*/ {
+      __Pyx_XDECREF(__pyx_r);
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_fetchone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 225, __pyx_L6_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_7 = NULL;
+      if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+        __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_5);
+        if (likely(__pyx_t_7)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+          __Pyx_INCREF(__pyx_t_7);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_5, function);
+        }
+      }
+      if (__pyx_t_7) {
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 225, __pyx_L6_error)
+        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+      } else {
+        __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 225, __pyx_L6_error)
+      }
+      __Pyx_GOTREF(__pyx_t_3);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_r = __pyx_t_3;
+      __pyx_t_3 = 0;
+      goto __pyx_L5_return;
+    }
+  }
+
+  /* "lets/common/db/dbConnector.pyx":228
+ * 		finally:
+ * 			# Close the cursor and release worker's lock
+ * 			if cursor is not None:             # <<<<<<<<<<<<<<
+ * 				cursor.close()
+ * 			if worker is not None:
+ */
+  /*finally:*/ {
+    __pyx_L6_error:;
+    /*exception exit:*/{
+      __Pyx_PyThreadState_declare
+      __Pyx_PyThreadState_assign
+      __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
+      __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
+      if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13) < 0)) __Pyx_ErrFetch(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13);
+      __Pyx_XGOTREF(__pyx_t_11);
+      __Pyx_XGOTREF(__pyx_t_12);
+      __Pyx_XGOTREF(__pyx_t_13);
+      __Pyx_XGOTREF(__pyx_t_14);
+      __Pyx_XGOTREF(__pyx_t_15);
+      __Pyx_XGOTREF(__pyx_t_16);
+      __pyx_t_8 = __pyx_lineno; __pyx_t_9 = __pyx_clineno; __pyx_t_10 = __pyx_filename;
+      {
+        __pyx_t_1 = (__pyx_v_cursor != Py_None);
+        __pyx_t_2 = (__pyx_t_1 != 0);
+        if (__pyx_t_2) {
+
+          /* "lets/common/db/dbConnector.pyx":229
+ * 			# Close the cursor and release worker's lock
+ * 			if cursor is not None:
+ * 				cursor.close()             # <<<<<<<<<<<<<<
+ * 			if worker is not None:
+ * 				self.pool.putWorker(worker)
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 229, __pyx_L10_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_7 = NULL;
+          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+            __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_5);
+            if (likely(__pyx_t_7)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+              __Pyx_INCREF(__pyx_t_7);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_5, function);
+            }
+          }
+          if (__pyx_t_7) {
+            __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L10_error)
+            __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+          } else {
+            __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L10_error)
+          }
+          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+          /* "lets/common/db/dbConnector.pyx":228
+ * 		finally:
+ * 			# Close the cursor and release worker's lock
+ * 			if cursor is not None:             # <<<<<<<<<<<<<<
+ * 				cursor.close()
+ * 			if worker is not None:
+ */
+        }
+
+        /* "lets/common/db/dbConnector.pyx":230
+ * 			if cursor is not None:
+ * 				cursor.close()
+ * 			if worker is not None:             # <<<<<<<<<<<<<<
+ * 				self.pool.putWorker(worker)
+ * 
+ */
+        __pyx_t_2 = (__pyx_v_worker != Py_None);
+        __pyx_t_1 = (__pyx_t_2 != 0);
+        if (__pyx_t_1) {
+
+          /* "lets/common/db/dbConnector.pyx":231
+ * 				cursor.close()
+ * 			if worker is not None:
+ * 				self.pool.putWorker(worker)             # <<<<<<<<<<<<<<
+ * 
+ * 	def fetchAll(self, query, params=None):
+ */
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L10_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 231, __pyx_L10_error)
+          __Pyx_GOTREF(__pyx_t_7);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __pyx_t_5 = NULL;
+          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
+            __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_7);
+            if (likely(__pyx_t_5)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
+              __Pyx_INCREF(__pyx_t_5);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_7, function);
+            }
+          }
+          if (!__pyx_t_5) {
+            __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_v_worker); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L10_error)
+            __Pyx_GOTREF(__pyx_t_3);
+          } else {
+            #if CYTHON_FAST_PYCALL
+            if (PyFunction_Check(__pyx_t_7)) {
+              PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_worker};
+              __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L10_error)
+              __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+              __Pyx_GOTREF(__pyx_t_3);
+            } else
+            #endif
+            #if CYTHON_FAST_PYCCALL
+            if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
+              PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_v_worker};
+              __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L10_error)
+              __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+              __Pyx_GOTREF(__pyx_t_3);
+            } else
+            #endif
+            {
+              __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L10_error)
+              __Pyx_GOTREF(__pyx_t_4);
+              __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __pyx_t_5 = NULL;
+              __Pyx_INCREF(__pyx_v_worker);
+              __Pyx_GIVEREF(__pyx_v_worker);
+              PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_worker);
+              __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L10_error)
+              __Pyx_GOTREF(__pyx_t_3);
+              __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+            }
+          }
+          __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+          /* "lets/common/db/dbConnector.pyx":230
+ * 			if cursor is not None:
+ * 				cursor.close()
+ * 			if worker is not None:             # <<<<<<<<<<<<<<
+ * 				self.pool.putWorker(worker)
+ * 
+ */
+        }
+      }
+      if (PY_MAJOR_VERSION >= 3) {
+        __Pyx_XGIVEREF(__pyx_t_14);
+        __Pyx_XGIVEREF(__pyx_t_15);
+        __Pyx_XGIVEREF(__pyx_t_16);
+        __Pyx_ExceptionReset(__pyx_t_14, __pyx_t_15, __pyx_t_16);
+      }
+      __Pyx_XGIVEREF(__pyx_t_11);
+      __Pyx_XGIVEREF(__pyx_t_12);
+      __Pyx_XGIVEREF(__pyx_t_13);
+      __Pyx_ErrRestore(__pyx_t_11, __pyx_t_12, __pyx_t_13);
+      __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
+      __pyx_lineno = __pyx_t_8; __pyx_clineno = __pyx_t_9; __pyx_filename = __pyx_t_10;
+      goto __pyx_L1_error;
+      __pyx_L10_error:;
+      if (PY_MAJOR_VERSION >= 3) {
+        __Pyx_XGIVEREF(__pyx_t_14);
+        __Pyx_XGIVEREF(__pyx_t_15);
+        __Pyx_XGIVEREF(__pyx_t_16);
+        __Pyx_ExceptionReset(__pyx_t_14, __pyx_t_15, __pyx_t_16);
+      }
+      __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
+      __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
+      __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
+      __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
+      goto __pyx_L1_error;
+    }
+    __pyx_L5_return: {
+      __pyx_t_16 = __pyx_r;
+      __pyx_r = 0;
+
+      /* "lets/common/db/dbConnector.pyx":228
+ * 		finally:
+ * 			# Close the cursor and release worker's lock
+ * 			if cursor is not None:             # <<<<<<<<<<<<<<
+ * 				cursor.close()
+ * 			if worker is not None:
+ */
+      __pyx_t_1 = (__pyx_v_cursor != Py_None);
+      __pyx_t_2 = (__pyx_t_1 != 0);
+      if (__pyx_t_2) {
+
+        /* "lets/common/db/dbConnector.pyx":229
+ * 			# Close the cursor and release worker's lock
+ * 			if cursor is not None:
+ * 				cursor.close()             # <<<<<<<<<<<<<<
+ * 			if worker is not None:
+ * 				self.pool.putWorker(worker)
+ */
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_cursor, __pyx_n_s_close); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 229, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_7);
+        __pyx_t_4 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
+          __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_7);
+          if (likely(__pyx_t_4)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_7);
+            __Pyx_INCREF(__pyx_t_4);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_7, function);
+          }
+        }
+        if (__pyx_t_4) {
+          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        } else {
+          __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L1_error)
+        }
+        __Pyx_GOTREF(__pyx_t_3);
+        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+        /* "lets/common/db/dbConnector.pyx":228
+ * 		finally:
+ * 			# Close the cursor and release worker's lock
+ * 			if cursor is not None:             # <<<<<<<<<<<<<<
+ * 				cursor.close()
+ * 			if worker is not None:
+ */
+      }
+
+      /* "lets/common/db/dbConnector.pyx":230
+ * 			if cursor is not None:
+ * 				cursor.close()
+ * 			if worker is not None:             # <<<<<<<<<<<<<<
+ * 				self.pool.putWorker(worker)
+ * 
+ */
+      __pyx_t_2 = (__pyx_v_worker != Py_None);
+      __pyx_t_1 = (__pyx_t_2 != 0);
+      if (__pyx_t_1) {
+
+        /* "lets/common/db/dbConnector.pyx":231
+ * 				cursor.close()
+ * 			if worker is not None:
+ * 				self.pool.putWorker(worker)             # <<<<<<<<<<<<<<
+ * 
+ * 	def fetchAll(self, query, params=None):
+ */
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pool); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 231, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_7);
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_putWorker); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+        __pyx_t_7 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+          __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_4);
+          if (likely(__pyx_t_7)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+            __Pyx_INCREF(__pyx_t_7);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_4, function);
+          }
+        }
+        if (!__pyx_t_7) {
+          __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_worker); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_3);
+        } else {
+          #if CYTHON_FAST_PYCALL
+          if (PyFunction_Check(__pyx_t_4)) {
+            PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_worker};
+            __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
+            __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+            __Pyx_GOTREF(__pyx_t_3);
+          } else
+          #endif
+          #if CYTHON_FAST_PYCCALL
+          if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+            PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_worker};
+            __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
+            __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+            __Pyx_GOTREF(__pyx_t_3);
+          } else
+          #endif
+          {
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_7); __pyx_t_7 = NULL;
+            __Pyx_INCREF(__pyx_v_worker);
+            __Pyx_GIVEREF(__pyx_v_worker);
+            PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_worker);
+            __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_3);
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          }
+        }
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+        /* "lets/common/db/dbConnector.pyx":230
+ * 			if cursor is not None:
+ * 				cursor.close()
+ * 			if worker is not None:             # <<<<<<<<<<<<<<
+ * 				self.pool.putWorker(worker)
+ * 
+ */
+      }
+      __pyx_r = __pyx_t_16;
+      __pyx_t_16 = 0;
+      goto __pyx_L0;
+    }
+  }
+
+  /* "lets/common/db/dbConnector.pyx":203
+ * 				self.pool.putWorker(worker)
+ * 
+ * 	def fetch(self, query, params=None, _all=False):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Fetch a single value from db that matches given query
  */
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("common.db.dbConnector.db.fetch", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.fetch", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_cursor);
   __Pyx_XDECREF(__pyx_v_worker);
+  __Pyx_XDECREF(__pyx_v_params);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "common/db/dbConnector.pyx":229
+/* "lets/common/db/dbConnector.pyx":233
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetchAll(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def fetchAll(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
- * 		Fetch all values from db that matche given query.
+ * 		Fetch all values from db that match given query.
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6common_2db_11dbConnector_2db_6fetchAll[] = "\n\t\tFetch all values from db that matche given query.\n\t\tCalls self.fetch with all = True.\n\n\t\t:param query: query to execute. You can bind parameters with %s\n\t\t:param params: parameters list. First element replaces first %s and so on\n\t\t";
-static PyMethodDef __pyx_mdef_6common_2db_11dbConnector_2db_7fetchAll = {"fetchAll", (PyCFunction)__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6common_2db_11dbConnector_2db_6fetchAll};
-static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_4lets_6common_2db_11dbConnector_2db_6fetchAll[] = "\n\t\tFetch all values from db that match given query.\n\t\tCalls self.fetch with all = True.\n\n\t\t:param query: query to execute. You can bind parameters with %s\n\t\t:param params: parameters list. First element replaces first %s and so on\n\t\t";
+static PyMethodDef __pyx_mdef_4lets_6common_2db_11dbConnector_2db_7fetchAll = {"fetchAll", (PyCFunction)__pyx_pw_4lets_6common_2db_11dbConnector_2db_7fetchAll, METH_VARARGS|METH_KEYWORDS, __pyx_doc_4lets_6common_2db_11dbConnector_2db_6fetchAll};
+static PyObject *__pyx_pw_4lets_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_query = 0;
   PyObject *__pyx_v_params = 0;
@@ -5749,7 +5813,7 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__py
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_self,&__pyx_n_s_query,&__pyx_n_s_params,0};
     PyObject* values[3] = {0,0,0};
-    values[2] = ((PyObject *)((PyObject*)__pyx_empty_tuple));
+    values[2] = ((PyObject *)((PyObject *)Py_None));
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -5772,7 +5836,7 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__py
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_query)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("fetchAll", 0, 2, 3, 1); __PYX_ERR(0, 229, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("fetchAll", 0, 2, 3, 1); __PYX_ERR(0, 233, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -5782,7 +5846,7 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fetchAll") < 0)) __PYX_ERR(0, 229, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "fetchAll") < 0)) __PYX_ERR(0, 233, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5800,106 +5864,139 @@ static PyObject *__pyx_pw_6common_2db_11dbConnector_2db_7fetchAll(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("fetchAll", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 229, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("fetchAll", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 233, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("common.db.dbConnector.db.fetchAll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.fetchAll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6common_2db_11dbConnector_2db_6fetchAll(__pyx_self, __pyx_v_self, __pyx_v_query, __pyx_v_params);
+  __pyx_r = __pyx_pf_4lets_6common_2db_11dbConnector_2db_6fetchAll(__pyx_self, __pyx_v_self, __pyx_v_query, __pyx_v_params);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6common_2db_11dbConnector_2db_6fetchAll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params) {
+static PyObject *__pyx_pf_4lets_6common_2db_11dbConnector_2db_6fetchAll(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_query, PyObject *__pyx_v_params) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
+  int __pyx_t_1;
+  int __pyx_t_2;
   PyObject *__pyx_t_3 = NULL;
-  int __pyx_t_4;
+  PyObject *__pyx_t_4 = NULL;
   PyObject *__pyx_t_5 = NULL;
+  int __pyx_t_6;
+  PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("fetchAll", 0);
+  __Pyx_INCREF(__pyx_v_params);
 
-  /* "common/db/dbConnector.pyx":237
+  /* "lets/common/db/dbConnector.pyx":241
  * 		:param params: parameters list. First element replaces first %s and so on
  * 		"""
+ * 		if params is None:             # <<<<<<<<<<<<<<
+ * 			params = ()
+ * 		return self.fetch(query, params, True)
+ */
+  __pyx_t_1 = (__pyx_v_params == Py_None);
+  __pyx_t_2 = (__pyx_t_1 != 0);
+  if (__pyx_t_2) {
+
+    /* "lets/common/db/dbConnector.pyx":242
+ * 		"""
+ * 		if params is None:
+ * 			params = ()             # <<<<<<<<<<<<<<
+ * 		return self.fetch(query, params, True)
+ */
+    __Pyx_INCREF(__pyx_empty_tuple);
+    __Pyx_DECREF_SET(__pyx_v_params, __pyx_empty_tuple);
+
+    /* "lets/common/db/dbConnector.pyx":241
+ * 		:param params: parameters list. First element replaces first %s and so on
+ * 		"""
+ * 		if params is None:             # <<<<<<<<<<<<<<
+ * 			params = ()
+ * 		return self.fetch(query, params, True)
+ */
+  }
+
+  /* "lets/common/db/dbConnector.pyx":243
+ * 		if params is None:
+ * 			params = ()
  * 		return self.fetch(query, params, True)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fetch); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 237, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = NULL;
-  __pyx_t_4 = 0;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_3)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_3);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fetch); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = NULL;
+  __pyx_t_6 = 0;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+      __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
-      __pyx_t_4 = 1;
+      __Pyx_DECREF_SET(__pyx_t_4, function);
+      __pyx_t_6 = 1;
     }
   }
   #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[4] = {__pyx_t_3, __pyx_v_query, __pyx_v_params, Py_True};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 3+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 237, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
+  if (PyFunction_Check(__pyx_t_4)) {
+    PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_v_query, __pyx_v_params, Py_True};
+    __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_GOTREF(__pyx_t_3);
   } else
   #endif
   #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[4] = {__pyx_t_3, __pyx_v_query, __pyx_v_params, Py_True};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_4, 3+__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 237, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+    PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_v_query, __pyx_v_params, Py_True};
+    __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_6, 3+__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_GOTREF(__pyx_t_3);
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(3+__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 237, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    if (__pyx_t_3) {
-      __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
+    __pyx_t_7 = PyTuple_New(3+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_7);
+    if (__pyx_t_5) {
+      __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
     }
     __Pyx_INCREF(__pyx_v_query);
     __Pyx_GIVEREF(__pyx_v_query);
-    PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_4, __pyx_v_query);
+    PyTuple_SET_ITEM(__pyx_t_7, 0+__pyx_t_6, __pyx_v_query);
     __Pyx_INCREF(__pyx_v_params);
     __Pyx_GIVEREF(__pyx_v_params);
-    PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_v_params);
+    PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_v_params);
     __Pyx_INCREF(Py_True);
     __Pyx_GIVEREF(Py_True);
-    PyTuple_SET_ITEM(__pyx_t_5, 2+__pyx_t_4, Py_True);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 237, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    PyTuple_SET_ITEM(__pyx_t_7, 2+__pyx_t_6, Py_True);
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_r = __pyx_t_3;
+  __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "common/db/dbConnector.pyx":229
+  /* "lets/common/db/dbConnector.pyx":233
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetchAll(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def fetchAll(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
- * 		Fetch all values from db that matche given query.
+ * 		Fetch all values from db that match given query.
  */
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("common.db.dbConnector.db.fetchAll", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_XDECREF(__pyx_t_7);
+  __Pyx_AddTraceback("lets.common.db.dbConnector.db.fetchAll", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_params);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
@@ -5965,7 +6062,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_charset, __pyx_k_charset, sizeof(__pyx_k_charset), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_close, __pyx_k_close, sizeof(__pyx_k_close), 0, 0, 1, 1},
-  {&__pyx_n_s_common_db_dbConnector, __pyx_k_common_db_dbConnector, sizeof(__pyx_k_common_db_dbConnector), 0, 0, 1, 1},
   {&__pyx_kp_s_common_db_dbConnector_pyx, __pyx_k_common_db_dbConnector_pyx, sizeof(__pyx_k_common_db_dbConnector_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_common_log, __pyx_k_common_log, sizeof(__pyx_k_common_log), 0, 0, 1, 1},
   {&__pyx_n_s_config, __pyx_k_config, sizeof(__pyx_k_config), 0, 0, 1, 1},
@@ -6010,6 +6106,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
   {&__pyx_n_s_initialSize, __pyx_k_initialSize, sizeof(__pyx_k_initialSize), 0, 0, 1, 1},
   {&__pyx_n_s_lastrowid, __pyx_k_lastrowid, sizeof(__pyx_k_lastrowid), 0, 0, 1, 1},
+  {&__pyx_n_s_lets_common_db_dbConnector, __pyx_k_lets_common_db_dbConnector, sizeof(__pyx_k_lets_common_db_dbConnector), 0, 0, 1, 1},
   {&__pyx_n_s_level, __pyx_k_level, sizeof(__pyx_k_level), 0, 0, 1, 1},
   {&__pyx_n_s_log, __pyx_k_log, sizeof(__pyx_k_log), 0, 0, 1, 1},
   {&__pyx_n_s_logUtils, __pyx_k_logUtils, sizeof(__pyx_k_logUtils), 0, 0, 1, 1},
@@ -6062,7 +6159,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "common/db/dbConnector.pyx":31
+  /* "lets/common/db/dbConnector.pyx":31
  * 		c = self.connection.cursor(MySQLdb.cursors.DictCursor)
  * 		try:
  * 			c.execute("SELECT 1+1")             # <<<<<<<<<<<<<<
@@ -6073,7 +6170,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "common/db/dbConnector.pyx":111
+  /* "lets/common/db/dbConnector.pyx":111
  * 		glob.dog.gauge(glob.DATADOG_PREFIX+".mysql_pool.size", self.pool.qsize())
  * 		if level >= 50:
  * 			log.warning("Too many failed connection attempts. No MySQL connection available.")             # <<<<<<<<<<<<<<
@@ -6084,7 +6181,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "common/db/dbConnector.pyx":117
+  /* "lets/common/db/dbConnector.pyx":117
  * 			if self.pool.empty():
  * 				# The pool is empty. Spawn a new temporary worker
  * 				log.warning("MySQL connections pool is empty. Using temporary worker.")             # <<<<<<<<<<<<<<
@@ -6095,7 +6192,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "common/db/dbConnector.pyx":118
+  /* "lets/common/db/dbConnector.pyx":118
  * 				# The pool is empty. Spawn a new temporary worker
  * 				log.warning("MySQL connections pool is empty. Using temporary worker.")
  * 				worker = self.newWorker(True)             # <<<<<<<<<<<<<<
@@ -6106,7 +6203,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "common/db/dbConnector.pyx":125
+  /* "lets/common/db/dbConnector.pyx":125
  * 				# If the pool is usually empty, expand it
  * 				if self.consecutiveEmptyPool >= 10:
  * 					log.warning("MySQL connections pool is empty. Filling connections pool.")             # <<<<<<<<<<<<<<
@@ -6117,7 +6214,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "common/db/dbConnector.pyx":135
+  /* "lets/common/db/dbConnector.pyx":135
  * 			# Connection to server lost
  * 			# Wait 1 second and try again
  * 			log.warning("Can't connect to MySQL database. Retrying in 1 second...")             # <<<<<<<<<<<<<<
@@ -6128,7 +6225,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "common/db/dbConnector.pyx":137
+  /* "lets/common/db/dbConnector.pyx":137
  * 			log.warning("Can't connect to MySQL database. Retrying in 1 second...")
  * 			glob.dog.increment(glob.DATADOG_PREFIX+".mysql_pool.failed_connections")
  * 			time.sleep(1)             # <<<<<<<<<<<<<<
@@ -6139,7 +6236,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "common/db/dbConnector.pyx":12
+  /* "lets/common/db/dbConnector.pyx":12
  * 	A single MySQL worker
  * 	"""
  * 	def __init__(self, connection, temporary=False):             # <<<<<<<<<<<<<<
@@ -6154,7 +6251,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "common/db/dbConnector.pyx":23
+  /* "lets/common/db/dbConnector.pyx":23
  * 		log.debug("Created MySQL worker. Temporary: {}".format(self.temporary))
  * 
  * 	def ping(self):             # <<<<<<<<<<<<<<
@@ -6166,7 +6263,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__11);
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_ping, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":38
+  /* "lets/common/db/dbConnector.pyx":38
  * 			c.close()
  * 
  * 	def __del__(self):             # <<<<<<<<<<<<<<
@@ -6178,7 +6275,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__13);
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_del, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 38, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":50
+  /* "lets/common/db/dbConnector.pyx":50
  * 	A MySQL workers pool
  * 	"""
  * 	def __init__(self, host, username, password, database, size=128):             # <<<<<<<<<<<<<<
@@ -6193,7 +6290,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "common/db/dbConnector.pyx":66
+  /* "lets/common/db/dbConnector.pyx":66
  * 		self.fillPool()
  * 
  * 	def newWorker(self, temporary=False):             # <<<<<<<<<<<<<<
@@ -6208,7 +6305,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "common/db/dbConnector.pyx":82
+  /* "lets/common/db/dbConnector.pyx":82
  * 		return conn
  * 
  * 	def fillPool(self, newConnections=0):             # <<<<<<<<<<<<<<
@@ -6223,7 +6320,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
 
-  /* "common/db/dbConnector.pyx":98
+  /* "lets/common/db/dbConnector.pyx":98
  * 				self.pool.put_nowait(self.newWorker())
  * 
  * 	def getWorker(self, level=0):             # <<<<<<<<<<<<<<
@@ -6238,7 +6335,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
 
-  /* "common/db/dbConnector.pyx":143
+  /* "lets/common/db/dbConnector.pyx":143
  * 		return worker
  * 
  * 	def putWorker(self, worker):             # <<<<<<<<<<<<<<
@@ -6250,7 +6347,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__28);
   __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_putWorker, 143, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 143, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":164
+  /* "lets/common/db/dbConnector.pyx":164
  * 	A MySQL helper with multiple workers
  * 	"""
  * 	def __init__(self, host, username, password, database, initialSize):             # <<<<<<<<<<<<<<
@@ -6262,10 +6359,10 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__30);
   __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(6, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_init, 164, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 164, __pyx_L1_error)
 
-  /* "common/db/dbConnector.pyx":177
+  /* "lets/common/db/dbConnector.pyx":177
  * 		self.pool = connectionsPool(host, username, password, database, initialSize)
  * 
- * 	def execute(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def execute(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Executes a query
  */
@@ -6273,37 +6370,37 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
   __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_execute, 177, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 177, __pyx_L1_error)
-  __pyx_tuple__34 = PyTuple_Pack(1, ((PyObject*)__pyx_empty_tuple)); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
 
-  /* "common/db/dbConnector.pyx":201
+  /* "lets/common/db/dbConnector.pyx":203
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetch(self, query, params = (), _all = False):             # <<<<<<<<<<<<<<
+ * 	def fetch(self, query, params=None, _all=False):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Fetch a single value from db that matches given query
  */
-  __pyx_tuple__35 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_query, __pyx_n_s_params, __pyx_n_s_all, __pyx_n_s_cursor, __pyx_n_s_worker); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_query, __pyx_n_s_params, __pyx_n_s_all, __pyx_n_s_cursor, __pyx_n_s_worker); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(4, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_fetch, 201, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 201, __pyx_L1_error)
-  __pyx_tuple__37 = PyTuple_Pack(2, ((PyObject*)__pyx_empty_tuple), ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(4, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_fetch, 203, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_tuple__37 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
   __Pyx_GIVEREF(__pyx_tuple__37);
 
-  /* "common/db/dbConnector.pyx":229
+  /* "lets/common/db/dbConnector.pyx":233
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetchAll(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def fetchAll(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
- * 		Fetch all values from db that matche given query.
+ * 		Fetch all values from db that match given query.
  */
-  __pyx_tuple__38 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_query, __pyx_n_s_params); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_query, __pyx_n_s_params); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_fetchAll, 229, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 229, __pyx_L1_error)
-  __pyx_tuple__40 = PyTuple_Pack(1, ((PyObject*)__pyx_empty_tuple)); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_common_db_dbConnector_pyx, __pyx_n_s_fetchAll, 233, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __pyx_tuple__40 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
   __Pyx_RefNannyFinishContext();
@@ -6444,14 +6541,14 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_common__db__dbConnector) {
+  if (__pyx_module_is_main_lets__common__db__dbConnector) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "common.db.dbConnector")) {
-      if (unlikely(PyDict_SetItemString(modules, "common.db.dbConnector", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "lets.common.db.dbConnector")) {
+      if (unlikely(PyDict_SetItemString(modules, "lets.common.db.dbConnector", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -6471,7 +6568,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "common/db/dbConnector.pyx":1
+  /* "lets/common/db/dbConnector.pyx":1
  * import queue             # <<<<<<<<<<<<<<
  * import MySQLdb
  * import MySQLdb.cursors
@@ -6481,7 +6578,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_queue, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":2
+  /* "lets/common/db/dbConnector.pyx":2
  * import queue
  * import MySQLdb             # <<<<<<<<<<<<<<
  * import MySQLdb.cursors
@@ -6492,7 +6589,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_MySQLdb, __pyx_t_1) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":3
+  /* "lets/common/db/dbConnector.pyx":3
  * import queue
  * import MySQLdb
  * import MySQLdb.cursors             # <<<<<<<<<<<<<<
@@ -6504,7 +6601,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_MySQLdb, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":4
+  /* "lets/common/db/dbConnector.pyx":4
  * import MySQLdb
  * import MySQLdb.cursors
  * import time             # <<<<<<<<<<<<<<
@@ -6516,7 +6613,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":5
+  /* "lets/common/db/dbConnector.pyx":5
  * import MySQLdb.cursors
  * import time
  * from objects import glob             # <<<<<<<<<<<<<<
@@ -6537,7 +6634,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":6
+  /* "lets/common/db/dbConnector.pyx":6
  * import time
  * from objects import glob
  * from common.log import logUtils as log             # <<<<<<<<<<<<<<
@@ -6558,54 +6655,54 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":8
+  /* "lets/common/db/dbConnector.pyx":8
  * from common.log import logUtils as log
  * 
  * class worker:             # <<<<<<<<<<<<<<
  * 	"""
  * 	A single MySQL worker
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_worker, __pyx_n_s_worker, (PyObject *) NULL, __pyx_n_s_common_db_dbConnector, __pyx_kp_s_A_single_MySQL_worker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_worker, __pyx_n_s_worker, (PyObject *) NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_kp_s_A_single_MySQL_worker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "common/db/dbConnector.pyx":12
+  /* "lets/common/db/dbConnector.pyx":12
  * 	A single MySQL worker
  * 	"""
  * 	def __init__(self, connection, temporary=False):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Initialize a MySQL worker
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_6worker_1__init__, 0, __pyx_n_s_worker___init, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_6worker_1__init__, 0, __pyx_n_s_worker___init, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__10);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":23
+  /* "lets/common/db/dbConnector.pyx":23
  * 		log.debug("Created MySQL worker. Temporary: {}".format(self.temporary))
  * 
  * 	def ping(self):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Ping MySQL server using this worker.
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_6worker_3ping, 0, __pyx_n_s_worker_ping, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_6worker_3ping, 0, __pyx_n_s_worker_ping, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_ping, __pyx_t_2) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":38
+  /* "lets/common/db/dbConnector.pyx":38
  * 			c.close()
  * 
  * 	def __del__(self):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Close connection to the server
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_6worker_5__del__, 0, __pyx_n_s_worker___del, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_6worker_5__del__, 0, __pyx_n_s_worker___del, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_del, __pyx_t_2) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":8
+  /* "lets/common/db/dbConnector.pyx":8
  * from common.log import logUtils as log
  * 
  * class worker:             # <<<<<<<<<<<<<<
@@ -6618,81 +6715,81 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":46
+  /* "lets/common/db/dbConnector.pyx":46
  * 		self.connection.close()
  * 
  * class connectionsPool:             # <<<<<<<<<<<<<<
  * 	"""
  * 	A MySQL workers pool
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_connectionsPool, __pyx_n_s_connectionsPool, (PyObject *) NULL, __pyx_n_s_common_db_dbConnector, __pyx_kp_s_A_MySQL_workers_pool); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_connectionsPool, __pyx_n_s_connectionsPool, (PyObject *) NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_kp_s_A_MySQL_workers_pool); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "common/db/dbConnector.pyx":50
+  /* "lets/common/db/dbConnector.pyx":50
  * 	A MySQL workers pool
  * 	"""
  * 	def __init__(self, host, username, password, database, size=128):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Initialize a MySQL connections pool
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_15connectionsPool_1__init__, 0, __pyx_n_s_connectionsPool___init, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_1__init__, 0, __pyx_n_s_connectionsPool___init, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__17);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":66
+  /* "lets/common/db/dbConnector.pyx":66
  * 		self.fillPool()
  * 
  * 	def newWorker(self, temporary=False):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Create a new worker.
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_15connectionsPool_3newWorker, 0, __pyx_n_s_connectionsPool_newWorker, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_3newWorker, 0, __pyx_n_s_connectionsPool_newWorker, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__20);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_newWorker, __pyx_t_2) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":82
+  /* "lets/common/db/dbConnector.pyx":82
  * 		return conn
  * 
  * 	def fillPool(self, newConnections=0):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Fill the queue with workers
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_15connectionsPool_5fillPool, 0, __pyx_n_s_connectionsPool_fillPool, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_5fillPool, 0, __pyx_n_s_connectionsPool_fillPool, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__24);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_fillPool, __pyx_t_2) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":98
+  /* "lets/common/db/dbConnector.pyx":98
  * 				self.pool.put_nowait(self.newWorker())
  * 
  * 	def getWorker(self, level=0):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Get a MySQL connection worker from the pool.
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_15connectionsPool_7getWorker, 0, __pyx_n_s_connectionsPool_getWorker, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_7getWorker, 0, __pyx_n_s_connectionsPool_getWorker, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__27);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_getWorker, __pyx_t_2) < 0) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":143
+  /* "lets/common/db/dbConnector.pyx":143
  * 		return worker
  * 
  * 	def putWorker(self, worker):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Put the worker back in the pool.
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_15connectionsPool_9putWorker, 0, __pyx_n_s_connectionsPool_putWorker, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_15connectionsPool_9putWorker, 0, __pyx_n_s_connectionsPool_putWorker, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_putWorker, __pyx_t_2) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":46
+  /* "lets/common/db/dbConnector.pyx":46
  * 		self.connection.close()
  * 
  * class connectionsPool:             # <<<<<<<<<<<<<<
@@ -6705,68 +6802,68 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":160
+  /* "lets/common/db/dbConnector.pyx":160
  * 			self.pool.put_nowait(worker)
  * 
  * class db:             # <<<<<<<<<<<<<<
  * 	"""
  * 	A MySQL helper with multiple workers
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_db, __pyx_n_s_db, (PyObject *) NULL, __pyx_n_s_common_db_dbConnector, __pyx_kp_s_A_MySQL_helper_with_multiple_wo); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_db, __pyx_n_s_db, (PyObject *) NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_kp_s_A_MySQL_helper_with_multiple_wo); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "common/db/dbConnector.pyx":164
+  /* "lets/common/db/dbConnector.pyx":164
  * 	A MySQL helper with multiple workers
  * 	"""
  * 	def __init__(self, host, username, password, database, initialSize):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Initialize a new MySQL database helper with multiple workers.
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_2db_1__init__, 0, __pyx_n_s_db___init, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_2db_1__init__, 0, __pyx_n_s_db___init, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":177
+  /* "lets/common/db/dbConnector.pyx":177
  * 		self.pool = connectionsPool(host, username, password, database, initialSize)
  * 
- * 	def execute(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def execute(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Executes a query
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_2db_3execute, 0, __pyx_n_s_db_execute, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_2db_3execute, 0, __pyx_n_s_db_execute, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__34);
   if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_execute, __pyx_t_2) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":201
+  /* "lets/common/db/dbConnector.pyx":203
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetch(self, query, params = (), _all = False):             # <<<<<<<<<<<<<<
+ * 	def fetch(self, query, params=None, _all=False):             # <<<<<<<<<<<<<<
  * 		"""
  * 		Fetch a single value from db that matches given query
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_2db_5fetch, 0, __pyx_n_s_db_fetch, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_2db_5fetch, 0, __pyx_n_s_db_fetch, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__37);
-  if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_fetch, __pyx_t_2) < 0) __PYX_ERR(0, 201, __pyx_L1_error)
+  if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_fetch, __pyx_t_2) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":229
+  /* "lets/common/db/dbConnector.pyx":233
  * 				self.pool.putWorker(worker)
  * 
- * 	def fetchAll(self, query, params = ()):             # <<<<<<<<<<<<<<
+ * 	def fetchAll(self, query, params=None):             # <<<<<<<<<<<<<<
  * 		"""
- * 		Fetch all values from db that matche given query.
+ * 		Fetch all values from db that match given query.
  */
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6common_2db_11dbConnector_2db_7fetchAll, 0, __pyx_n_s_db_fetchAll, NULL, __pyx_n_s_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4lets_6common_2db_11dbConnector_2db_7fetchAll, 0, __pyx_n_s_db_fetchAll, NULL, __pyx_n_s_lets_common_db_dbConnector, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__40);
-  if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_fetchAll, __pyx_t_2) < 0) __PYX_ERR(0, 229, __pyx_L1_error)
+  if (PyObject_SetItem(__pyx_t_1, __pyx_n_s_fetchAll, __pyx_t_2) < 0) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "common/db/dbConnector.pyx":160
+  /* "lets/common/db/dbConnector.pyx":160
  * 			self.pool.put_nowait(worker)
  * 
  * class db:             # <<<<<<<<<<<<<<
@@ -6779,7 +6876,7 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "common/db/dbConnector.pyx":1
+  /* "lets/common/db/dbConnector.pyx":1
  * import queue             # <<<<<<<<<<<<<<
  * import MySQLdb
  * import MySQLdb.cursors
@@ -6797,11 +6894,11 @@ static int __pyx_pymod_exec_dbConnector(PyObject *__pyx_pyinit_module)
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init common.db.dbConnector", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init lets.common.db.dbConnector", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init common.db.dbConnector");
+    PyErr_SetString(PyExc_ImportError, "init lets.common.db.dbConnector");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

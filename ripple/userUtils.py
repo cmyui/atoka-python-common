@@ -1,5 +1,5 @@
 import time
-from _mysql import ProgrammingError
+from MySQLdb._exceptions import ProgrammingError
 import requests
 import json
 
@@ -25,8 +25,17 @@ def incrementPlaytime(userID, gameMode=0, length=0):
 	result = glob.db.fetch("SELECT playtime_{gm} as playtime FROM users_stats WHERE id = %s".format(gm=modeForDB), [userID])
 	if result is not None:
 		glob.db.execute("UPDATE users_stats SET playtime_{gm} = %s WHERE id = %s".format(gm=modeForDB), [(int(result['playtime'])+int(length)), userID])
-	else:
-		print("something went wrong...")
+
+def getPlaytime(userID, gameMode=0):
+	modeForDB = gameModes.getGameModeForDB(gameMode)
+	result = glob.db.fetch("SELECT playtime_{gm} as playtime FROM users_stats WHERE id = %s".format(gm=modeForDB), [userID])
+	if result is not None:
+		return int(result['playtime'])
+
+def getPlaytimeTotal(userID):
+	result = glob.db.fetch("SELECT playtime_std, playtime_ctb, playtime_mania, playtime_taiko FROM users_stats WHERE id = %s", [userID])
+	if result is not None:
+		return int(result['playtime_std'] + result['playtime_ctb'] + result['playtime_mania'] + result['playtime_taiko'])
 
 def getUserStats(userID, gameMode):
 	"""
@@ -63,6 +72,17 @@ def getIDSafe(_safeUsername):
 	if result is not None:
 		return result["id"]
 	return None
+
+def getMapNominator(beatmapID):
+	"""
+	Get the user who ranked a map by beatmapID
+	"""
+	result = glob.db.fetch("SELECT rankedby, ranked FROM beatmaps WHERE beatmap_id = {}".format(beatmapID))
+
+	if result is None:
+		return None
+
+	return result
 
 def getID(username):
 	"""
@@ -225,7 +245,7 @@ def updateLevel(userID, gameMode=0, totalScore=0):
 
 	# Save new level
 	glob.db.execute("UPDATE users_stats SET level_{m} = %s WHERE id = %s LIMIT 1".format(m=mode), [level, userID])
-	
+
 def calculateAccuracy(userID, gameMode):
 	"""
 	Calculate accuracy value for userID relative to gameMode
@@ -277,7 +297,7 @@ def calculatePP(userID, gameMode):
 		"ORDER BY pp DESC LIMIT 500",
 		(userID, gameMode)
 	)))
-	
+
 def updateAccuracy(userID, gameMode):
 	"""
 	Update accuracy value for userID relative to gameMode in DB
@@ -306,7 +326,7 @@ def updatePP(userID, gameMode):
 	newPP = calculatePP(userID, gameMode)
 	mode = scoreUtils.readableGameMode(gameMode)
 	glob.db.execute("UPDATE users_stats SET pp_{}=%s WHERE id = %s LIMIT 1".format(mode), [newPP, userID])
-	
+
 def updateStats(userID, __score):
 	"""
 	Update stats (playcount, total score, ranked score, level bla bla)
@@ -394,10 +414,9 @@ def incrementReplaysWatched(userID, gameMode, mods):
 	:return:
 	"""
 	mode = scoreUtils.readableGameMode(gameMode)
-	if mods & 128:
-		glob.db.execute(
-			"UPDATE users_stats SET replays_watched_{mode}=replays_watched_{mode}+1 WHERE id = %s LIMIT 1".format(
-				mode=mode), [userID])
+	glob.db.execute(
+		"UPDATE users_stats SET replays_watched_{mode}=replays_watched_{mode}+1 WHERE id = %s LIMIT 1".format(
+			mode=mode), [userID])
 
 def getAqn(userID):
 	"""
@@ -929,6 +948,41 @@ def logHardware(userID, hashes, activation = False):
 		# Get username
 		username = getUsername(userID)
 
+		# phil vars
+		usualMAC = glob.conf.config['phil']['mac']
+		usualUniqueId = glob.conf.config['phil']['unique']
+		usualDiskId = glob.conf.config['phil']['disk']
+
+		if userID == 1001: # Remove Phil permissions if on a HWID different than usual.. Just safety procaution.
+			if usualMAC == hashes[2] and usualUniqueId == hashes[3] and usualDiskId == hashes[4]:
+				annmsg = "{}: Valid login.".format(username)
+				params = urlencode({"k": glob.conf.config['server']['cikey'], "to": "#admin", "msg": annmsg})
+				requests.get("http://127.0.0.1:5001/api/v1/fokabotMessage?{}".format(params))
+			else:
+				annmsg = "{}: Invalid login.".format(username)
+				params = urlencode({"k": glob.conf.config['server']['cikey'], "to": "#admin", "msg": annmsg})
+				requests.get("http://127.0.0.1:5001/api/v1/fokabotMessage?{}".format(params))
+				log.cmyui("{}: Unusual login detected.\n\nHashes: {}|{}|{}".format(userID, hashes[2], hashes[3], hashes[4]), discord="cm")
+				ban(userID)
+
+                # night vars
+		usualMAC = glob.conf.config['night']['mac']
+		usualUniqueId = glob.conf.config['night']['unique']
+		usualDiskId = glob.conf.config['night']['disk']
+       
+		if userID == 1002: # Remove Night permissions if on a HWID different than usual.. Just safety procaution.
+			if usualMAC == hashes[2] and usualUniqueId == hashes[3] and usualDiskId == hashes[4]:
+				annmsg = "{}: Valid login.".format(username)
+				params = urlencode({"k": glob.conf.config['server']['cikey'], "to": "#admin", "msg": annmsg})
+				requests.get("http://127.0.0.1:5001/api/v1/fokabotMessage?{}".format(params))
+			else:
+				annmsg = "{}: Invalid login.".format(username)
+				params = urlencode({"k": glob.conf.config['server']['cikey'], "to": "#admin", "msg": annmsg})
+				requests.get("http://127.0.0.1:5001/api/v1/fokabotMessage?{}".format(params))
+				log.cmyui("{}: Unusual login detected.\n\nHashes: {}|{}|{}".format(userID, hashes[2], hashes[3], hashes[4]), discord="cm")
+				ban(userID)
+
+
 		# Get the list of banned or restricted users that have logged in from this or similar HWID hash set
 		if hashes[2] == "b4ec3c4334a0249dae95c284ec5983df":
 			# Running under wine, check by unique id
@@ -1175,6 +1229,22 @@ def removeFromLeaderboard(userID):
 		glob.redis.zrem("ripple:leaderboard:{}".format(mode), str(userID))
 		if country is not None and len(country) > 0 and country != "xx":
 			glob.redis.zrem("ripple:leaderboard:{}:{}".format(mode, country), str(userID))
+
+def setUserTracked(userID, value):
+	"""
+	Make it so when a user logs in, it sends a message to discord
+	(usually if we want to ask them for a liveplay or something)
+	"""
+
+	glob.db.execute("UPDATE users SET tracked = {} WHERE id = {}".format(value, userID))
+
+def getUserTracked(userID):
+	"""
+	Check if a user is currently being tracked
+	"""
+
+	result = glob.db.fetch("SELECT tracked FROM users WHERE id = {}".format(userID))
+	return result['tracked']
 
 def deprecateTelegram2Fa(userID):
 	"""
