@@ -1,7 +1,5 @@
-[![Discord](https://discordapp.com/api/guilds/365406575893938177/widget.png?style=shield)](https://discord.gg/5cBtMPW)
-
-## ripple-python-common
-Common Python code for Akatsuki
+## atoka-python-common
+Common Python code for Atoka
 
 - Origin: https://zxq.co/ripple/ripple-python-common
 - Mirror: https://github.com/osuripple/ripple-python-common
