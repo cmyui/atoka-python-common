@@ -62,6 +62,18 @@ def getUserStats(userID, gameMode):
 	# Return stats + game rank
 	return stats
 
+def getMaxCombo(userID, gameMode):
+	"""
+	Get user max combo relative to `gameMode`.
+
+	:param userID:
+	:param gameMode: game mode number
+	:return: dictionary with result
+	"""
+
+	result = glob.db.fetch("SELECT max_combo FROM scores WHERE userid = %s AND play_mode = %s AND completed = 3 ORDER BY max_combo DESC LIMIT 1", [userID, gameMode])
+	return result["max_combo"]
+
 def getIDSafe(_safeUsername):
 	"""
 	Get user ID from a safe username
